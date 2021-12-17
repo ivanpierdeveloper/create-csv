@@ -153,7 +153,7 @@ class Classi {
          // button pdf
          var btnPdf = document.createElement('button');
          btnPdf.setAttribute('class','btn-scarica-file-pdf');
-         var btnStylepDf = btnPdf.style;
+         var btnStylePdf = btnPdf.style;
          btnStylePdf.setProperty('cursor','pointer');
          btnStylePdf.setProperty('background-color', 'var(--warning)');
          btnStylePdf.setProperty('border', '1px solid var(--dark)');
