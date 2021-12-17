@@ -64,4 +64,4 @@ cls.createTable();
 
 // call Funzioni
 // Funzioni.messaggioDiBenvenuto();
-Funzioni.showMyAlert("primo messaggio di alert", "var(--success)", "var(--white)", "var(--yellow)");
+// Funzioni.showMyAlert("primo messaggio di alert", "var(--success)", "var(--white)", "var(--yellow)");
