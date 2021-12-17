@@ -10,3 +10,5 @@ class Classi {
         alert(`| ${msg} |`); // ` = alt(sx)+96(tastierino numerico)
     }
 } // ./classi
+// test
+funzioni.messaggioDiConferma();
