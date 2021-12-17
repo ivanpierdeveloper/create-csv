@@ -80,8 +80,8 @@ class Classi {
         var tr1 = document.createElement('tr');
         var td1 = document.createElement('td');
         tr1.appendChild(td1);
-        table.appendChild(tr);
-        
+        table.appendChild(tr1);
+
         divContent.appendChild(table);
 
     }
