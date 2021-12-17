@@ -79,6 +79,8 @@ class Classi {
 
         var tr1 = document.createElement('tr');
         var td1 = document.createElement('td');
+        var texttd1 = document.createTextNode("1");
+        td1.appendChild(texttd1);
         tr1.appendChild(td1);
         table.appendChild(tr1);
 
