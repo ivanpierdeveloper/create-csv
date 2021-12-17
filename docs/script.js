@@ -105,10 +105,29 @@ class Classi {
         tr1.appendChild(td4);
         tr1.appendChild(td5);
         table.appendChild(tr1);
+        
+        var ar = [
+            ["1", "ivanpier-1", "psw-1", "ivanpier@gmail.com-1", "age-1"],
+            ["2", "ivanpier-2", "psw-2", "ivanpier@gmail.com-2", "age-2"],
+            ["3", "ivanpier-3", "psw-3", "ivanpier@gmail.com-3", "age-3"],
+            ["4", "ivanpier-4", "psw-4", "ivanpier@gmail.com-4", "age-4"],
+            ["5", "ivanpier-5", "psw-5", "ivanpier@gmail.com-5", "age-5"]
+     ];
+     for(var x = 0; x < 5; x++) {
+         var tr = document.createElement('tr');
+         for(var y = 0; y < 5; y++) {
+             var td = document.createElement('td');
+             td.style.setProperty('border', '1px solid #868e96');
+             var text = document.createTextNode(ar[x][y]);
+             td.appendChild(text);
+             tr.appendChild(td);
+         }
+            
+             table.appendChild(tr);
+     }
 
-        divContent.appendChild(table);
-
-    }
+     divContent.appendChild(table);
+    } // create table
 } // ./classi
 
 // call Classi
