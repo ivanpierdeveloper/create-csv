@@ -33,6 +33,13 @@ const Funzioni = {
         'top' : '-50%',
         'transition' : '2s'
         });
+    },
+    // call function closeMyAlert
+    imgCloseMyAlert : function() {
+        let imgClose = document.querySelector('.img-close');
+        imgClose.addEventListener('click', (e) => {
+            this.closeMyAlert();
+        });
     }
 }// ./funzioni
 
@@ -48,4 +55,4 @@ class Classi {
 // cls.messaggioDiConferma("Salvato con successo");
 
 // Funzioni.messaggioDiBenvenuto();
-Funzioni.showMyAlert("Primo messaggio di alert", "var(--success)", "var(--white)", "var(--yellow)");
+Funzioni.showMyAlert("primo messaggio di alert", "var(--success)", "var(--white)", "var(--yellow)");
