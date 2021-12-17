@@ -7,9 +7,10 @@ const Funzioni = {
 class Classi {
     // metodi
     messaggioDiConferma(msg) {
-        alert(`| ${msg} |`); // ` = alt(sx)+96(tastierino numerico)
+        // alert(`| ${msg} |`); // ` = alt(sx)+96(tastierino numerico)
     }
 } // ./classi
 // test
-var cls = new Classi()
-cls.messaggioDiConferma("Salvato con successo");
+// var cls = new Classi()
+// cls.messaggioDiConferma("Salvato con successo");
+Funzioni.messaggioDiBenvenuto();
