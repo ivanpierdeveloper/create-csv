@@ -1,5 +1,5 @@
 'use strict'
-const funzioni = {
+const Funzioni = {
     messaggioDiBenvenuto : function() {
         alert("| Welcome To Back |");
     }
@@ -11,4 +11,5 @@ class Classi {
     }
 } // ./classi
 // test
-funzioni.messaggioDiConferma();
+var cls = new Funzioni()
+cls.messaggioDiConferma();
