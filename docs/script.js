@@ -52,6 +52,8 @@ class Classi {
         caption.appendChild(textCaption);
         table.appendChild(caption)
 
+        var trTh = document.createElement('tr');
+
         var th1 = document.createElement('th');
         var textth1 = document.createTextNode("id");
         th1.appendChild(textth1);
@@ -71,12 +73,14 @@ class Classi {
         var th5 = document.createElement('th');
         var textth5 = document.createTextNode("age");
         th5.appendChild(textth5);
-        table.appendChild(th1);
-        table.appendChild(th2);
-        table.appendChild(th3);
-        table.appendChild(th4);
-        table.appendChild(th5);
 
+        trTh.appendChild(th1);
+        trTh.appendChild(th2);
+        trTh.appendChild(th3);
+        trTh.appendChild(th4);
+        trTh.appendChild(th5);
+        table.appendChild(trTh);
+        
         var tr1 = document.createElement('tr');
 
         var td1 = document.createElement('td');
