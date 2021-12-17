@@ -1,0 +1,368 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #868e96;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #868e96;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --azzurro: #7abfc4;
+    --giallo: #e9bd3d;
+    --verdescuro: #55664f;
+    --verdesalvia: #91a67c;
+    --indianred: #cd5c5c;
+    --fullscreen: rgb(33, 37, 41, 0.5);
+}
+
+
+/* COLORI CUSTOM AZIENDA. */
+
+.azzurro_background {
+    background-color: var(--azzurro);
+    /* #7abfc4;*/
+    color: #ffffff;
+}
+
+.giallo_background {
+    background-color: #e9bd3d;
+    color: #ffffff;
+}
+
+.verdescuro_background {
+    background-color: #55664f;
+    color: #ffffff;
+}
+
+.verdesalvia_background {
+    background-color: #91a67c;
+    color: #ffffff;
+}
+
+.indianred_background {
+    background-color: #cd5c5c;
+    color: #ffffff;
+}
+
+.danger-text-bg {
+    background-color: var(--danger);
+    color: var(--white);
+}
+
+.warning-text-bg {
+    background-color: var(--warning);
+    color: var(--dark);
+}
+
+.dark-text-bg {
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+.azzurro_text {
+    color: #7abfc4;
+}
+
+.giallo_text {
+    color: #e9bd3d;
+}
+
+.verdescuro_text {
+    color: #55664f;
+}
+
+.verdesalvia_text {
+    color: #91a67c;
+}
+
+.indianred_text {
+    color: #cd5c5c;
+}
+
+
+/* /COLORI CUSTOMIZED AZIENDA. */
+
+
+/* CREO LE CLASSI DA CHIAMARE ALL'OCCORRENZA SOLO TESTO */
+/* COLOR TEXT */
+.root-text-color-blue {
+    color: var(--blue);
+}
+
+.root-text-color-purple {
+    color: var(--purple);
+}
+
+.root-text-color-orange {
+    color: var(--orange);
+}
+
+.root-text-color-cyan {
+    color: var(--cyan);
+}
+
+.root-text-color-danger {
+    color: var(--danger);
+}
+
+ /* ALIGN TEXT */
+.root-text-align-left {
+    text-align: left;
+}
+
+.root-text-align-center {
+    text-align: center;
+}
+
+.root-text-align-right {
+    text-align: right;
+}
+
+
+/* /CREO LE CLASSI DA CHIAMARE ALL'OCCORRENZA SOLO TESTO */
+
+
+/* CREO LE CLASSI DA CHIAMARE ALL'OCCORRENZA SOLO BACKGROUND */
+
+.root-bg-color-blue {
+    background-color: var(--blue);
+}
+
+
+/* /CREO LE CLASSI DA CHIAMARE ALL'OCCORRENZA SOLO BACKGROUD */
+
+
+/* CREO LE CLASSI DA CHIAMARE ALL'OCCORRENZA TESTO & BACKGROUND */
+
+.root-txt-bg-color-blue {
+    color: var(--blue);
+    background-color: var(--blue);
+}
+
+
+/* /CREO LE CLASSI DA CHIAMARE ALL'OCCORRENZA TESTO & BACKGROUND */
+
+
+/* CUSTOMIZED FONTS */
+
+.root-font-bold {
+    font-weight: bold;
+}
+
+.root-font-uppercase {
+    text-transform: uppercase;
+}
+
+.root-font-lowercase {
+    text-transform: lowercase;
+}
+
+.root-font-prima-lettera {
+    text-transform: capitalize;
+}
+
+.root-font-pt-5 {
+    font-size: 5pt;
+}
+
+.root-font-pt-6 {
+    font-size: 6pt;
+}
+
+.root-font-pt-8 {
+    font-size: 8pt;
+}
+
+.root-font-pt-9 {
+    font-size: 9pt;
+}
+
+.root-font-pt-10 {
+    font-size: 10pt;
+}
+
+.root-font-pt-11 {
+    font-size: 11pt;
+}
+
+.root-font-pt-12 {
+    font-size: 12pt;
+}
+
+.root-font-pt-14 {
+    font-size: 14pt;
+}
+
+
+/* /CUSTOMIZED FONTS */
+
+
+/* NASCONDO AL DISPLAY */
+
+.root-display-none {
+    display: none;
+}
+
+.root-display-block {
+    display: block;
+}
+
+
+/* /NASCONDO AL DISPLAY */
+
+
+/* PULISCO IL DOM */
+
+.root-clear-dom {
+    clear: both;
+}
+
+
+/* /PULISCO IL DOM */
+
+
+/* CURSORE POINTER */
+
+.crs-pointer {
+    cursor: pointer;
+}
+
+
+/* /CURSORE POINTER */
+
+
+/* ELEMENTI LEFT RIGHT */
+
+.el-align-left {
+    float: left;
+}
+
+.el-align-right {
+    float: right;
+}
+
+
+/* ELEMENTI LEFT RIGHT */
+/* BUTTON */
+.btn {
+    border-radius: 8px;
+    width: 150px;
+    height: 30px;
+    font-family: Arial, Helvetica, monospace, sans-serif;
+    font-variant: small-caps;
+    margin-top: 5px;
+}
+.btn-s:hover {
+    background-color: var(--success);
+}
+
+.btn-s {
+    transition: 2s;
+    border: 1px solid var(--yellow);
+    background-color: transparent;
+    color: var(--light);
+    background-image: url('../img/sun.png');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: left center;
+}
+/* BUTTON */
+
+/* BODY */ 
+body {
+    background-color: var(--secondary);
+    font-family: Arial, Helvetica, monospace, sans-serif ;
+    font-variant: small-caps;
+}
+/* BODY */
+/* INPUT TYPE */
+input[type=text], input[type=password], input[type=url], input[type=email], input[type=number] {
+    display: block;
+    width: 94%;
+    height: 30px;
+    border: 1px solid var(--secondary);
+    border-radius: 8px;
+    background-image: url('../img/sun.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    padding-left: 30px;
+}
+/* INPUT TYPE */
+/* SPAN */
+form span {
+    display: block;
+    position: fixed;
+    left: 60%;
+    display: none;
+}
+/* SPAN */
+/* IMPOSTAZIONI PAGINA DEI CONTENUTI E MYMODAL*/
+.container {
+    border: 1px solid var(--orange);
+    /*width: 50vw;*/
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-right: auto;
+   /*  position: fixed; left: 50%; top: 50%;
+    transform: translate(-50%, -50%); */
+    padding: 18px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    background-color: var(--dark);
+    box-shadow: 0 3px 17px var(--orange);
+  }
+  .full-screen {
+    background-color: var(--fullscreen);
+    width: 100%;
+    height: 100%;
+    position: fixed; left: 0; top: 0;
+    z-index: 1;
+    display: none;
+    filter: alpha(opacity=50);
+  }
+  .my-alert {
+    width: 45vw;
+    height: auto;
+    position: fixed; left: 50%; top: -50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 3px 17px var(--secondary);
+    border-radius: 8px;
+    border: 1px solid;
+    padding: 18px;
+    text-align: center;
+    /*background-color: var(--dark);*/
+    /*color: var(--yellow);*/
+    z-index: 2;
+  }
+  .img-close {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+  }
+  .content {
+    border: 1px solid var(--giallo);
+    width: auto;
+    height: auto;
+    padding: 18px;
+    border-radius: 8px;
+    margin-left: auto;        
+    margin-right: auto;
+  }
+  /* IMPOSTAZIONI PAGINA DEI CONTENUTI E MYMODAL*/
