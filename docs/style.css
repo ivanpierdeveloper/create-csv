@@ -28,43 +28,44 @@
     --verdesalvia: #91a67c;
     --indianred: #cd5c5c;
     --fullscreen: rgb(33, 37, 41, 0.5);
+    
 } /* var di colori */
 
 
 /* background-color & color */
 
-.azzurro_background {
+.root-azzurro-background {
     background-color: var(--azzurro);
     /* #7abfc4;*/
-    color: #ffffff;
+    color: var(--white);
 }
 
-.giallo_background {
-    background-color: #e9bd3d;
-    color: #ffffff;
+.root-giallo-background {
+    background-color: var(--giallo);
+    color: var(--white);
 }
 
-.verdescuro_background {
-    background-color: #55664f;
-    color: #ffffff;
+.root-verdescuro-background {
+    background-color: var(--verdescuro);
+    color: var(--white);
 }
 
-.verdesalvia_background {
-    background-color: #91a67c;
-    color: #ffffff;
+.root-verdesalvia-background {
+    background-color: var(--verdesalvia);
+    color: var(--white);
 }
 
-.indianred_background {
-    background-color: #cd5c5c;
-    color: #ffffff;
+.root-indianred-background {
+    background-color: var(--indianred);
+    color: var(--white);
 }
 
-.danger-text-bg {
+.root-danger-text-bg {
     background-color: var(--danger);
     color: var(--white);
 }
 
-.warning-text-bg {
+.root-warning-text-bg {
     background-color: var(--warning);
     color: var(--dark);
 }
@@ -80,24 +81,24 @@
 }
 /* background-color & color */
 /* color */
-.azzurro_text {
-    color: #7abfc4;
+.root-azzurro-text {
+    color: var(--azzurro);
 }
 
-.giallo_text {
-    color: #e9bd3d;
+.root-giallo-text {
+    color: var(--giallo);
 }
 
-.verdescuro_text {
-    color: #55664f;
+.root-verdescuro-text {
+    color: var(--verdescuro);
 }
 
-.verdesalvia_text {
-    color: #91a67c;
+.root-verdesalvia-text {
+    color: var(--verdesalvia);
 }
 
-.indianred_text {
-    color: #cd5c5c;
+.root-indianred-text {
+    color: var(--indianred);
 }
 
 .root-text-color-blue {
@@ -207,17 +208,17 @@
 /* clear */
 
 /* cursor */
-.crs-pointer {
+.root-crs-pointer {
     cursor: pointer;
 }
 /* cursor */
 
 /* float */
-.el-align-left {
+.root-el-align-left {
     float: left;
 }
 
-.el-align-right {
+.root-el-align-right {
     float: right;
 }
 /* float */
@@ -232,6 +233,7 @@
     font-variant: small-caps;
     margin-top: 5px;
 }
+/* btn-success*/
 .btn-s:hover {
     background-color: var(--success);
 }
@@ -246,6 +248,7 @@
     background-size: 25px;
     background-position: left center;
 }
+/* btn-success*/
 /* button */
 
 /* body */ 
