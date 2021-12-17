@@ -12,4 +12,4 @@ class Classi {
 } // ./classi
 // test
 var cls = new Classi()
-cls.messaggioDiConferma("| Salvato con successo |");
+cls.messaggioDiConferma("Salvato con successo");
