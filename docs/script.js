@@ -125,7 +125,23 @@ class Classi {
              table.appendChild(tr);
      }
 
+        // button
+        var btn = document.createElement('button');
+        btn.setAttribute('class','btn-scarica-file-csv');
+        var btnStyle = btn.style;
+        btnStyle.setProperty('cursor','pointer');
+        btnStyle.setProperty('background-color', 'var(--warning)');
+        btnStyle.setProperty('border', '1px solid var(--dark)');
+        btnStyle.setProperty('border-radius', '8px');
+        btnStyle.setProperty('color', 'var(--dark)');
+        btnStyle.setProperty('height', '40px');
+        btnStyle.setProperty('width', '120px');
+        var btnTitle = document.createTextNode("Scarica-csv");
+        btn.appendChild(btnTitle);
+        // ./button
+
      divContent.appendChild(table);
+     divContent.appendChild(btn);
     } // create table
 } // ./classi
 
