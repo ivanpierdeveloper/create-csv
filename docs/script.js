@@ -185,15 +185,14 @@ class Classi {
 const cls = new Classi()
 // cls.messaggioDiConferma("Salvato con successo");
 cls.createTable();
+// func create file csv
 var btnScaricaFileCsv = document.querySelector('.btn-scarica-file-csv');
 btnScaricaFileCsv.addEventListener('click', function() {
    cls. htmlToCSV(null, "File-csv");
 });
+// func create file csv
 
 // call Funzioni
 // Funzioni.messaggioDiBenvenuto();
 // Funzioni.showMyAlert("primo messaggio di alert", "var(--success)", "var(--white)", "var(--yellow)");
-
-// func create file csv
-
 
