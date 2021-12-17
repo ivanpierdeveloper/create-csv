@@ -78,10 +78,32 @@ class Classi {
         table.appendChild(th5);
 
         var tr1 = document.createElement('tr');
+
         var td1 = document.createElement('td');
         var texttd1 = document.createTextNode("1");
         td1.appendChild(texttd1);
+
+        var td2 = document.createElement('td');
+        var texttd2 = document.createTextNode("ivanpier");
+        td2.appendChild(texttd2);
+
+        var td3 = document.createElement('td');
+        var texttd3 = document.createTextNode("abc123");
+        td3.appendChild(texttd3);
+
+        var td4 = document.createElement('td');
+        var texttd4 = document.createTextNode("ivanpier@gmail.com");
+        td4.appendChild(texttd4);
+
+        var td5 = document.createElement('td');
+        var texttd5 = document.createTextNode("25");
+        td5.appendChild(texttd5);
+        
         tr1.appendChild(td1);
+        tr1.appendChild(td2);
+        tr1.appendChild(td3);
+        tr1.appendChild(td4);
+        tr1.appendChild(td5);
         table.appendChild(tr1);
 
         divContent.appendChild(table);
