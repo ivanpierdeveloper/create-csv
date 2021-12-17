@@ -33,20 +33,27 @@ const Funzioni = {
         'top' : '-50%',
         'transition' : '2s'
         });
-    },
-    // call function closeMyAlert
-    imgCloseMyAlert : function() {
-        let imgClose = document.querySelector('.img-close');
-        imgClose.addEventListener('click', (e) => {
-            this.closeMyAlert();
-        });
     }
 }// ./funzioni
 
 class Classi {
     // metodi
+    // messagio di conferma
     messaggioDiConferma(msg) {
         // alert(`| ${msg} |`); // ` = alt(sx)+96(tastierino numerico)
+    }
+    // create element table
+    createTable() {
+        const divContent = document.querySelector('content');
+
+        var table = document.createElement('table');
+        var caption = document.createElemenr('caption');
+        var textCaption = document.createTextNode("Dati caricati per creare file csv");
+        caption.appendChild(textCaption);
+        table.appendChild(caption)
+
+        divContent.appendChild(table);
+
     }
 } // ./classi
 
