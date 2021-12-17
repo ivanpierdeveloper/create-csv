@@ -1,3 +1,4 @@
+/* var di colori */
 :root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -27,10 +28,10 @@
     --verdesalvia: #91a67c;
     --indianred: #cd5c5c;
     --fullscreen: rgb(33, 37, 41, 0.5);
-}
+} /* var di colori */
 
 
-/* COLORI CUSTOM AZIENDA. */
+/* background-color & color */
 
 .azzurro_background {
     background-color: var(--azzurro);
@@ -73,6 +74,12 @@
     color: var(--white);
 }
 
+.root-txt-bg-color-blue {
+    color: var(--blue);
+    background-color: var(--blue);
+}
+/* background-color & color */
+/* color */
 .azzurro_text {
     color: #7abfc4;
 }
@@ -93,12 +100,6 @@
     color: #cd5c5c;
 }
 
-
-/* /COLORI CUSTOMIZED AZIENDA. */
-
-
-/* CREO LE CLASSI DA CHIAMARE ALL'OCCORRENZA SOLO TESTO */
-/* COLOR TEXT */
 .root-text-color-blue {
     color: var(--blue);
 }
@@ -117,9 +118,9 @@
 
 .root-text-color-danger {
     color: var(--danger);
-}
+}/* color */
 
- /* ALIGN TEXT */
+ /* align-text */
 .root-text-align-left {
     text-align: left;
 }
@@ -130,39 +131,19 @@
 
 .root-text-align-right {
     text-align: right;
-}
+} /* align-text */
 
-
-/* /CREO LE CLASSI DA CHIAMARE ALL'OCCORRENZA SOLO TESTO */
-
-
-/* CREO LE CLASSI DA CHIAMARE ALL'OCCORRENZA SOLO BACKGROUND */
-
+/* background-color */
 .root-bg-color-blue {
     background-color: var(--blue);
 }
 
-
-/* /CREO LE CLASSI DA CHIAMARE ALL'OCCORRENZA SOLO BACKGROUD */
-
-
-/* CREO LE CLASSI DA CHIAMARE ALL'OCCORRENZA TESTO & BACKGROUND */
-
-.root-txt-bg-color-blue {
-    color: var(--blue);
-    background-color: var(--blue);
-}
-
-
-/* /CREO LE CLASSI DA CHIAMARE ALL'OCCORRENZA TESTO & BACKGROUND */
-
-
-/* CUSTOMIZED FONTS */
-
+/* font-weight */
 .root-font-bold {
     font-weight: bold;
 }
-
+/* font-weight */
+/* text-transform */
 .root-font-uppercase {
     text-transform: uppercase;
 }
@@ -174,7 +155,8 @@
 .root-font-prima-lettera {
     text-transform: capitalize;
 }
-
+/* text-transform */
+/* font-size */ 
 .root-font-pt-5 {
     font-size: 5pt;
 }
@@ -206,13 +188,9 @@
 .root-font-pt-14 {
     font-size: 14pt;
 }
+/* font-size */ 
 
-
-/* /CUSTOMIZED FONTS */
-
-
-/* NASCONDO AL DISPLAY */
-
+/* display */
 .root-display-none {
     display: none;
 }
@@ -220,33 +198,21 @@
 .root-display-block {
     display: block;
 }
+/* display */
 
-
-/* /NASCONDO AL DISPLAY */
-
-
-/* PULISCO IL DOM */
-
+/* clear */
 .root-clear-dom {
     clear: both;
 }
+/* clear */
 
-
-/* /PULISCO IL DOM */
-
-
-/* CURSORE POINTER */
-
+/* cursor */
 .crs-pointer {
     cursor: pointer;
 }
+/* cursor */
 
-
-/* /CURSORE POINTER */
-
-
-/* ELEMENTI LEFT RIGHT */
-
+/* float */
 .el-align-left {
     float: left;
 }
@@ -254,10 +220,10 @@
 .el-align-right {
     float: right;
 }
+/* float */
 
 
-/* ELEMENTI LEFT RIGHT */
-/* BUTTON */
+/* button */
 .btn {
     border-radius: 8px;
     width: 150px;
@@ -280,16 +246,16 @@
     background-size: 25px;
     background-position: left center;
 }
-/* BUTTON */
+/* button */
 
-/* BODY */ 
+/* body */ 
 body {
     background-color: var(--secondary);
     font-family: Arial, Helvetica, monospace, sans-serif ;
     font-variant: small-caps;
 }
-/* BODY */
-/* INPUT TYPE */
+/* body */ 
+/* input type */
 input[type=text], input[type=password], input[type=url], input[type=email], input[type=number] {
     display: block;
     width: 94%;
@@ -302,16 +268,16 @@ input[type=text], input[type=password], input[type=url], input[type=email], inpu
     background-size: 25px;
     padding-left: 30px;
 }
-/* INPUT TYPE */
-/* SPAN */
+/* input type */
+/* form span */
 form span {
     display: block;
     position: fixed;
     left: 60%;
     display: none;
 }
-/* SPAN */
-/* IMPOSTAZIONI PAGINA DEI CONTENUTI E MYMODAL*/
+/* form span */
+/* imposta<zioni pagina dei contenuti e mymodal */
 .container {
     border: 1px solid var(--orange);
     /*width: 50vw;*/
@@ -365,4 +331,4 @@ form span {
     margin-left: auto;        
     margin-right: auto;
   }
-  /* IMPOSTAZIONI PAGINA DEI CONTENUTI E MYMODAL*/
+/* imposta<zioni pagina dei contenuti e mymodal */
