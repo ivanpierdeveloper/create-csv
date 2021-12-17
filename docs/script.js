@@ -193,11 +193,11 @@ cls.createTable();
 // func create file csv
 var btnScaricaFileCsv = document.querySelector('.btn-scarica-file-csv');
 btnScaricaFileCsv.addEventListener('click', function() {
-    var question = prompt("Nome file", "Qui ...");
+    var question = prompt("Nome file", "Nome file CSV");
     if(question) {
         cls.htmlToCSV(null, question);
     } else {
-        Funzioni.showMyAlert("Non hai scritto nome file", "var(--warning)", "var(--dark)", "var(--dark)");
+        Funzioni.showMyAlert("non hai scritto nome file", "var(--warning)", "var(--dark)", "var(--dark)");
     }
 });
 // func create file csv
