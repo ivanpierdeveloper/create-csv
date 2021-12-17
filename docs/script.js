@@ -11,5 +11,5 @@ class Classi {
     }
 } // ./classi
 // test
-var cls = new Funzioni()
+var cls = new Classi()
 cls.messaggioDiConferma();
