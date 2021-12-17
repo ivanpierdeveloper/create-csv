@@ -2,6 +2,13 @@
 const Funzioni = {
     messaggioDiBenvenuto : function() {
         alert("| Welcome To Back |");
+    },
+    messaggioMyAlert : function(msg) {
+        let el = document.querySelector('.my-alert-testo');
+        el.innerHTML = msg;
+    },
+    showMyAlert : function(msg) {
+
     }
 }// ./funzioni
 class Classi {
