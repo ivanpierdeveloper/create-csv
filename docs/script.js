@@ -47,7 +47,7 @@ class Classi {
         const divContent = document.querySelector('content');
 
         var table = document.createElement('table');
-        var caption = document.createElemenr('caption');
+        var caption = document.createElement('caption');
         var textCaption = document.createTextNode("Dati caricati per creare file csv");
         caption.appendChild(textCaption);
         table.appendChild(caption)
