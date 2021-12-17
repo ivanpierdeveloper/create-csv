@@ -44,7 +44,7 @@ class Classi {
     }
     // create element table
     createTable() {
-        const divContent = document.querySelector('content');
+        const divContent = document.querySelector('.content');
 
         var table = document.createElement('table');
         var caption = document.createElement('caption');
