@@ -71,13 +71,17 @@ class Classi {
         var th5 = document.createElement('th');
         var textth5 = document.createTextNode("age");
         th5.appendChild(textth5);
-
         table.appendChild(th1);
         table.appendChild(th2);
         table.appendChild(th3);
         table.appendChild(th4);
         table.appendChild(th5);
 
+        var tr1 = document.createElement('tr');
+        var td1 = document.createElement('td');
+        tr1.appendChild(td1);
+        table.appendChild(tr);
+        
         divContent.appendChild(table);
 
     }
