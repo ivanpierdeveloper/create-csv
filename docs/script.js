@@ -57,9 +57,11 @@ class Classi {
     }
 } // ./classi
 
-// call class e function
-// var cls = new Classi()
+// call Classi
+var cls = new Classi()
 // cls.messaggioDiConferma("Salvato con successo");
+cls.createTable();
 
+// call Funzioni
 // Funzioni.messaggioDiBenvenuto();
 Funzioni.showMyAlert("primo messaggio di alert", "var(--success)", "var(--white)", "var(--yellow)");
