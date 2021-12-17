@@ -129,7 +129,7 @@ class Classi {
              table.appendChild(tr);
      }
 
-        // button
+        // button csv
         var btn = document.createElement('button');
         btn.setAttribute('class','btn-scarica-file-csv');
         var btnStyle = btn.style;
@@ -140,13 +140,30 @@ class Classi {
         btnStyle.setProperty('color', 'var(--dark)');
         btnStyle.setProperty('height', '40px');
         btnStyle.setProperty('width', '120px');
-        btnStyle.setProperty('url', 'img/favicon.ico left center no-repeat 32px');
+        btnStyle.setProperty('background-image', 'url("img/favicon.ico left center no-repeat 32px")');
         var btnTitle = document.createTextNode("Scarica-csv");
         btn.appendChild(btnTitle);
-        // ./button
+        // ./button csv
+
+         // button pdf
+         var btnPdf = document.createElement('button');
+         btnPdf.setAttribute('class','btn-scarica-file-pdf');
+         var btnStylepDf = btnPdf.style;
+         btnStylePdf.setProperty('cursor','pointer');
+         btnStylePdf.setProperty('background-color', 'var(--warning)');
+         btnStylePdf.setProperty('border', '1px solid var(--dark)');
+         btnStylePdf.setProperty('border-radius', '8px');
+         btnStylePdf.setProperty('color', 'var(--dark)');
+         btnStylePdf.setProperty('height', '40px');
+         btnStylePdf.setProperty('width', '120px');
+         btnStylePdf.setProperty('background-image', 'url("img/favicon.ico left center no-repeat 32px")');
+         var btnTitlePdf = document.createTextNode("Scarica-pdf");
+         btnPdf.appendChild(btnTitlePdf);
+         // ./button pdf
 
      divContent.appendChild(table);
      divContent.appendChild(btn);
+     divContent.appendChild(btnPdf);
     } // create table
     // scarica file csv
     downloadCSVFile(csv, filename) {
