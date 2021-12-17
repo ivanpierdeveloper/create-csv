@@ -182,9 +182,13 @@ class Classi {
 } // ./classi
 
 // call Classi
-var cls = new Classi()
+const cls = new Classi()
 // cls.messaggioDiConferma("Salvato con successo");
 cls.createTable();
+var btnScaricaFileCsv = document.querySelector('.btn-scarica-file-csv');
+btnScaricaFileCsv.addEventListener('click', function() {
+   cls. htmlToCSV(null, "File-csv");
+});
 
 // call Funzioni
 // Funzioni.messaggioDiBenvenuto();
@@ -193,8 +197,3 @@ cls.createTable();
 // func create file csv
 
 
-var btnScaricaFileCsv = document.querySelector('.btn-scarica-file-csv');
-const cls = new Classi();
-btnScaricaFileCsv.addEventListener('click', function() {
-   cls. htmlToCSV(null, "File-csv");
-});
