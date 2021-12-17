@@ -80,7 +80,7 @@ class Classi {
         trTh.appendChild(th4);
         trTh.appendChild(th5);
         table.appendChild(trTh);
-        
+
         var tr1 = document.createElement('tr');
 
         var td1 = document.createElement('td');
@@ -140,6 +140,7 @@ class Classi {
         btnStyle.setProperty('color', 'var(--dark)');
         btnStyle.setProperty('height', '40px');
         btnStyle.setProperty('width', '120px');
+        btnStyle.setProperty('url', 'img/favicon.ico left center no-repeat 32px');
         var btnTitle = document.createTextNode("Scarica-csv");
         btn.appendChild(btnTitle);
         // ./button
