@@ -34,94 +34,102 @@
 
 /* background-color & color */
 
-.root-azzurro-background {
+.root-background-azzurro {
     background-color: var(--azzurro);
     /* #7abfc4;*/
     color: var(--white);
 }
 
-.root-giallo-background {
+.root-background-giallo {
     background-color: var(--giallo);
     color: var(--white);
 }
 
-.root-verdescuro-background {
+.root-background-verdescuro {
     background-color: var(--verdescuro);
     color: var(--white);
 }
 
-.root-verdesalvia-background {
+.root-background-verdesalvia {
     background-color: var(--verdesalvia);
     color: var(--white);
 }
 
-.root-indianred-background {
+.root-background-indianred {
     background-color: var(--indianred);
     color: var(--white);
 }
 
-.root-danger-text-bg {
+.root-text-bg-danger {
     background-color: var(--danger);
     color: var(--white);
 }
 
-.root-warning-text-bg {
+.root-text-bg-warning {
     background-color: var(--warning);
     color: var(--dark);
 }
 
-.dark-text-bg {
+.root-text-bg-dark {
     background-color: var(--dark);
     color: var(--white);
 }
 
-.root-txt-bg-color-blue {
+.root-text-bg-blue {
     color: var(--blue);
     background-color: var(--blue);
 }
+
 /* background-color & color */
+
+/* background-color */
+.root-bg-blue {
+    background-color: var(--blue);
+}
+/* background-color */
+
 /* color */
-.root-azzurro-text {
+.root-text-azzurro {
     color: var(--azzurro);
 }
 
-.root-giallo-text {
+.root-text-giallo {
     color: var(--giallo);
 }
 
-.root-verdescuro-text {
+.root-text-verdescuro {
     color: var(--verdescuro);
 }
 
-.root-verdesalvia-text {
+.root-text-verdesalvia {
     color: var(--verdesalvia);
 }
 
-.root-indianred-text {
+.root-text-indianred {
     color: var(--indianred);
 }
 
-.root-text-color-blue {
+.root-text-blue {
     color: var(--blue);
 }
 
-.root-text-color-purple {
+.root-text-purple {
     color: var(--purple);
 }
 
-.root-text-color-orange {
+.root-text-orange {
     color: var(--orange);
 }
 
-.root-text-color-cyan {
+.root-text-cyan {
     color: var(--cyan);
 }
 
-.root-text-color-danger {
+.root-text-danger {
     color: var(--danger);
 }/* color */
 
- /* align-text */
+/* align-text */
 .root-text-align-left {
     text-align: left;
 }
@@ -134,10 +142,6 @@
     text-align: right;
 } /* align-text */
 
-/* background-color */
-.root-bg-color-blue {
-    background-color: var(--blue);
-}
 
 /* font-weight */
 .root-font-bold {
