@@ -84,7 +84,7 @@ class Classi {
         td1.appendChild(texttd1);
 
         var td2 = document.createElement('td');
-        var texttd2 = document.createTextNode("ivanpier");
+        var texttd2 = document.createTextNode("Ivanpier");
         td2.appendChild(texttd2);
 
         var td3 = document.createElement('td');
@@ -107,11 +107,11 @@ class Classi {
         table.appendChild(tr1);
         
         var ar = [
-            ["0002", "ivanpier-2", "psw-2", "ivanpier@gmail.com-2", "age-2"],
-            ["0003", "ivanpier-3", "psw-3", "ivanpier@gmail.com-3", "age-3"],
-            ["0004", "ivanpier-4", "psw-4", "ivanpier@gmail.com-4", "age-4"],
-            ["0005", "ivanpier-5", "psw-5", "ivanpier@gmail.com-5", "age-5"],
-            ["0006", "ivanpier-6", "psw-6", "ivanpier@gmail.com-6", "age-6"]
+            ["0002", "Hulk", "def", "hulk@gmail.com", "22"],
+            ["0003", "Ken", "ghi", "ken@gmail.com", "33"],
+            ["0004", "Spiderman", "lmn", "spiderman@gmail.com", "44"],
+            ["0005", "Batman", "opq", "batman@gmail.com", "55"],
+            ["0006", "Superman", "rst", "superman@gmail.com", "66"]
         ];
      for(var x = 0; x < 5; x++) {
          var tr = document.createElement('tr');
