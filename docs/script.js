@@ -194,6 +194,7 @@ cls.createTable();
 
 
 var btnScaricaFileCsv = document.querySelector('.btn-scarica-file-csv');
+const cls = new Classi();
 btnScaricaFileCsv.addEventListener('click', function() {
-    htmlToCSV(null, "File-csv")
+   cls. htmlToCSV(null, "File-csv");
 });
