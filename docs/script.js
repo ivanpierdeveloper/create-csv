@@ -188,7 +188,7 @@ cls.createTable();
 // func create file csv
 var btnScaricaFileCsv = document.querySelector('.btn-scarica-file-csv');
 btnScaricaFileCsv.addEventListener('click', function() {
-   cls. htmlToCSV(null, "File-csv");
+   cls.htmlToCSV(null, "File-csv");
 });
 // func create file csv
 
