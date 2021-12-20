@@ -139,12 +139,12 @@ class Classi {
         btnStyle.setProperty('border-radius', '8px');
         btnStyle.setProperty('color', 'var(--dark)');
         btnStyle.setProperty('height', '40px');
-        btnStyle.setProperty('width', '120px');
+        btnStyle.setProperty('width', '125px');
         btnStyle.setProperty("background-image" , "url('../create-csv/img/favicon.ico')");
         btnStyle.setProperty('background-position' , 'left center');
         btnStyle.setProperty('background-repeat' , 'no-repeat');
-        btnStyle.setProperty('background-size' , '30px');
-        btnStyle.setProperty('padding-left', '15px');
+        btnStyle.setProperty('background-size' , '25px');
+        btnStyle.setProperty('padding-left', '17px');
         var btnTitle = document.createTextNode("Scarica-csv");
         btn.appendChild(btnTitle);
         // ./button csv
@@ -159,12 +159,12 @@ class Classi {
          btnStylePdf.setProperty('border-radius', '8px');
          btnStylePdf.setProperty('color', 'var(--dark)');
          btnStylePdf.setProperty('height', '40px');
-         btnStylePdf.setProperty('width', '120px');
+         btnStylePdf.setProperty('width', '125px');
          btnStylePdf.setProperty("background-image" , "url('../create-csv/img/favicon.ico')");
          btnStylePdf.setProperty('background-position' , 'left center');
          btnStylePdf.setProperty('background-repeat' , 'no-repeat');
-         btnStylePdf.setProperty('background-size' , '30px');
-         btnStylePdf.setProperty('padding-left', '15px');
+         btnStylePdf.setProperty('background-size' , '25px');
+         btnStylePdf.setProperty('padding-left', '17px');
          var btnTitlePdf = document.createTextNode("Scarica-pdf");
          btnPdf.appendChild(btnTitlePdf);
          // ./button pdf
