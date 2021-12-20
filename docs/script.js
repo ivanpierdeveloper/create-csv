@@ -222,7 +222,7 @@ btnScaricaFileCsv.addEventListener('click', function() {
     var question = prompt("Nome file", "Nome file CSV");
     if(question) {
         cls.htmlToCSV(null, question);
-    } else if(isNaN(question)){
+    } else if(isEmpty(question)){
         Funzioni.showMyAlert("non hai scritto nome file", "var(--warning)", "var(--dark)", "var(--dark)");
     }
 });
