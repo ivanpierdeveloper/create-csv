@@ -182,7 +182,7 @@ class Classi {
 
         download_link = document.createElement("a");
 
-        download_link.download = filename;
+        download_link.download = filename+".csv";
 
         download_link.href = window.URL.createObjectURL(csv_file);
 
