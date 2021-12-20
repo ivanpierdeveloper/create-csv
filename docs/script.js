@@ -232,7 +232,7 @@ btnScaricaFileCsv.addEventListener('click', function() {
 // Funzioni.messaggioDiBenvenuto();
 // Funzioni.showMyAlert("primo messaggio di alert", "var(--success)", "var(--white)", "var(--yellow)");
 // button create pdf
-let btn_pdf = document.querySelector('btn-scarica-file-pdf');
+let btn_pdf = document.querySelector('.btn-scarica-file-pdf');
 btn_pdf.addEventListener('click', (e) =>{
     console.group("begin");
         console.log("Button-Pdf");
