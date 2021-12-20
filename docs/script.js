@@ -115,7 +115,7 @@ class Classi {
             ["0003", "Ken", "ghi", "ken@gmail.com", "33"],
             ["0004", "Spiderman", "lmn", "spiderman@gmail.com", "44"],
             ["0005", "Batman", "opq", "batman@gmail.com", "55"],
-            ["0006", "Superman", "rst", "superman@gmail.com", "77"]
+            ["0006", "Superman", "rst", "superman@gmail.com", "58"]
         ];
      for(var x = 0; x < ar.length; x++) {
          var tr = document.createElement('tr');
@@ -141,7 +141,7 @@ class Classi {
         btnStyle.setProperty('height', '40px');
         btnStyle.setProperty('width', '125px');
         btnStyle.setProperty("background-image" , "url('../create-csv/img/favicon.ico')");
-        btnStyle.setProperty('background-position' , 'left center');
+        btnStyle.setProperty('background-position' , '5 center');
         btnStyle.setProperty('background-repeat' , 'no-repeat');
         btnStyle.setProperty('background-size' , '25px');
         btnStyle.setProperty('padding-left', '17px');
@@ -161,7 +161,7 @@ class Classi {
          btnStylePdf.setProperty('height', '40px');
          btnStylePdf.setProperty('width', '125px');
          btnStylePdf.setProperty("background-image" , "url('../create-csv/img/favicon.ico')");
-         btnStylePdf.setProperty('background-position' , 'left center');
+         btnStylePdf.setProperty('background-position' , '5 center');
          btnStylePdf.setProperty('background-repeat' , 'no-repeat');
          btnStylePdf.setProperty('background-size' , '25px');
          btnStylePdf.setProperty('padding-left', '17px');
