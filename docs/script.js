@@ -141,7 +141,7 @@ class Classi {
         btnStyle.setProperty('height', '40px');
         btnStyle.setProperty('width', '120px');
         btnStyle.setProperty('background-image', 'url("img/favicon.ico left center no-repeat 32px")');
-        btnStyle.setProperty("background-image" , "url('../img/favicon.ico')");
+        btnStyle.setProperty("background-image" , "url('../img/favicon.png')");
         btnStyle.setProperty('background-position' , 'left center');
         btnStyle.setProperty('background-repeat' , 'no-repeat');
         btnStyle.setProperty('background-size' , '30px');
@@ -161,7 +161,7 @@ class Classi {
          btnStylePdf.setProperty('color', 'var(--dark)');
          btnStylePdf.setProperty('height', '40px');
          btnStylePdf.setProperty('width', '120px');
-         btnStylePdf.setProperty("background-image" , "url('../img/favicon.ico')");
+         btnStylePdf.setProperty("background-image" , "url('../img/favicon.png')");
          btnStylePdf.setProperty('background-position' , 'left center');
          btnStylePdf.setProperty('background-repeat' , 'no-repeat');
          btnStylePdf.setProperty('background-size' , '30px');
