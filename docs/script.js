@@ -140,7 +140,6 @@ class Classi {
         btnStyle.setProperty('color', 'var(--dark)');
         btnStyle.setProperty('height', '40px');
         btnStyle.setProperty('width', '120px');
-        btnStyle.setProperty('background-image', 'url("img/favicon.ico left center no-repeat 32px")');
         btnStyle.setProperty("background-image" , "url('../img/favicon.png')");
         btnStyle.setProperty('background-position' , 'left center');
         btnStyle.setProperty('background-repeat' , 'no-repeat');
