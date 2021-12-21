@@ -115,7 +115,7 @@ class Classi {
             ["0003", "Ken", "ghi", "ken@gmail.com", "33"],
             ["0004", "Spiderman", "lmn", "spiderman@gmail.com", "44"],
             ["0005", "Batman", "opq", "batman@gmail.com", "55"],
-            ["0006", "Superman", "rst", "superman@gmail.com", "55"]
+            ["0006", "Superman", "rst", "superman@gmail.com", "25"]
         ];
      for(var x = 0; x < ar.length; x++) {
          var tr = document.createElement('tr');
@@ -254,17 +254,17 @@ class Classi {
 
             // add text
                 // left, top, text
-            doc.text(5, 55, "ID");
-            doc.text(15, 55, "USR");
-            doc.text(35, 55, "PSW");
-            doc.text(50, 55, "EMAIL");
-            doc.text(65, 55, "AGE");
+            doc.text(5, 15, "ID");
+            doc.text(15, 15, "USR");
+            doc.text(35, 15, "PSW");
+            doc.text(50, 15, "EMAIL");
+            doc.text(65, 15, "AGE");
             // ./add text
 
             // add line
             doc.setLineWidth(0.2); // spessore
             doc.setDrawColor(139, 0, 0); // colore darkred
-            doc.rect(5, 56, 200, 0.1); // left, top, width, height
+            doc.rect(5, 17, 200, 0.1); // left, top, width, height
             // ./add line
 
             // dati da visualizzare sul pdf
@@ -300,7 +300,7 @@ class Classi {
                         // line
                         doc.setLineWidth(0.2); // spessore
                         doc.setDrawColor(139, 0, 0); // colore darkred
-                        doc.rect(5, 16, 200, 0.1); // left, top, width, height
+                        doc.rect(5, 17, 200, 0.1); // left, top, width, height
                         // ./line
 
                         // restore the var
@@ -321,7 +321,7 @@ class Classi {
                     // ./set color text
 
                     // rows odd even
-                    if(numRecords % 2 == 0){
+                    if(rows % 2 == 0){
                         doc.setFillColor(173, 216, 230); // background cell
                         doc.rect(left - 2, top - 3.3, 19.2, 4.2, "F"); // left, top, width, height, Fill or "FD" Fill and Border
                     } else {
