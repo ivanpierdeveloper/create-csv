@@ -348,7 +348,7 @@ class Classi {
             // ./for populate the pdf head and body
             
             // save file
-            throw new Error("File creato con successo");
+            // throw new Error("File creato con successo");
             doc.save(`${file_name}.pdf`);
             // .save file
         } catch(Exception) {
