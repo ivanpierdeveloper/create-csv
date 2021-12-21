@@ -330,7 +330,7 @@ class Classi {
                     }
                     // ./rows odd even
                     // set font size
-                    doc.fontSize(6); // pt 6
+                    doc.setFontSize(6); // pt 6
                     //. /set font size
                     // add text
                     doc.text(left + 2, top, data[i][j]);
