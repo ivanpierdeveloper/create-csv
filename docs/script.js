@@ -140,7 +140,7 @@ class Classi {
         btnStyle.setProperty('color', 'var(--dark)');
         btnStyle.setProperty('height', '40px');
         btnStyle.setProperty('width', '125px');
-        btnStyle.setProperty("background-image" , "url('../create-csv/img/favicon.ico')");
+        btnStyle.setProperty("background-image" , "url('../create-csv-pdf/img/favicon.ico')");
         btnStyle.setProperty('background-position' , '5px center');
         btnStyle.setProperty('background-repeat' , 'no-repeat');
         btnStyle.setProperty('background-size' , '25px');
@@ -160,7 +160,7 @@ class Classi {
          btnStylePdf.setProperty('color', 'var(--dark)');
          btnStylePdf.setProperty('height', '40px');
          btnStylePdf.setProperty('width', '125px');
-         btnStylePdf.setProperty("background-image" , "url('../create-csv/img/favicon.ico')");
+         btnStylePdf.setProperty("background-image" , "url('../create-csv-pdf/img/favicon.ico')");
          btnStylePdf.setProperty('background-position' , '5px center');
          btnStylePdf.setProperty('background-repeat' , 'no-repeat');
          btnStylePdf.setProperty('background-size' , '25px');
