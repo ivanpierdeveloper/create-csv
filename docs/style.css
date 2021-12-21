@@ -28,7 +28,44 @@
     --verdesalvia: #91a67c;
     --indianred: #cd5c5c;
     --fullscreen: rgb(33, 37, 41, 0.5);
-    
+    /* section dark */
+    --darkblue: rgb(0, 0, 139);
+    --darkcyan: rgb(0,139,139);
+    --darkgoldenrod: rgb(184,134,11);
+    --darkgray: rgb(169,169,169);
+    --darkgreen: rgb(0,100,0);
+    --darkgrey: rgb(169,169,169);
+    --darkkhaki: rgb(189,183,107);
+    --darkmagenta: rgb(139,0,139);
+    --darkolivegreen: rgb(85,107,47);
+    --darkorange:rgb(255, 140, 0);
+    --darkorchid: rgb(153,50,204);
+    --darkred: rgb(139, 0, 0);
+    --darksalmon: rgb(233,150,122);
+    --darkseagreen: rgb(143,188,143);
+    --darkslateblue: rgb(72,61,139);
+    --darkslategray: rgb(47,79,79);
+    --darkslategrey: rgb(47,79,79);
+    --darkturquoise: rgb(0,206,209);
+    --darkviolet: rgb(48,0,211);
+    /* section dark */
+    /* section light */
+    --lightblue: rgb();
+    --lightblue: rgb();
+    --lightblue: rgb();
+    --lightblue: rgb();
+    --lightblue: rgb();
+    --lightblue: rgb();
+    --lightblue: rgb();
+    --lightblue: rgb();
+    --lightblue: rgb();
+    --lightblue: rgb();
+    --lightblue: rgb();
+    --lightblue: rgb();
+    --lightblue: rgb();
+    --lightblue: rgb();
+    --lightblue: rgb();
+    /* section light */
 } /* var di colori */
 
 
