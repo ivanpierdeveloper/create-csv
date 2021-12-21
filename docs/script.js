@@ -321,7 +321,7 @@ class Classi {
                     // ./set color text
 
                     // rows odd even
-                    if(rows % 2 == 0){
+                    if(i % 2 == 0){
                         doc.setFillColor(173, 216, 230); // background cell
                         doc.rect(left - 2, top - 3.3, 19.2, 4.2, "F"); // left, top, width, height, Fill or "FD" Fill and Border
                     } else {
