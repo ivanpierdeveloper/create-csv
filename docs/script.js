@@ -246,8 +246,8 @@ class Classi {
             */
             // doc.addFont('ArialMS', 'Arial', 'normal');
             // doc.setFont('Arial');
-            doc.setFont('Courier'); // type font
-            doc.setFontType('normal') // bold or italic
+            doc.setFont('Courier', 'normal'); // type font
+            //doc.setFontType('normal') // bold or italic
             doc.setFontSize('8'); // pt font
             doc.setTextColor(0, 0, 139); // darkblue
             // ./setting text head
@@ -311,7 +311,7 @@ class Classi {
 
                     }// ./numrecords
                     // set cell border
-                    doc.setlineWidth(0.5); // spessore
+                    doc.setLineWidth(0.5); // spessore
                     doc.setDrawColor(0, 0, 192); // darkblue
                     doc.rect(5, 17, 20, 4); // left, top, width, heght
                     // ./set cell border
