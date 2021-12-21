@@ -224,7 +224,7 @@ class Classi {
         // ./add image al pdf
 
         // save file
-        doc.save(file_name);
+        doc.save(`${file_name}.pdf`);
         // .save file
     }
     // ./ create pdf
@@ -258,6 +258,7 @@ btn_pdf.addEventListener('click', (e) =>{
         console.log("Button-Pdf");
     console.groupEnd("begin");
     */
+   cls.create_pdf("Testing");
 });
 // button create pdf
 /* create pdf*/
