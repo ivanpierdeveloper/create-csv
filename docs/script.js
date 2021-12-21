@@ -211,21 +211,125 @@ class Classi {
     }
     // create pdf
     create_pdf(file_name) {
-        // creo l'inserimento dell'immagine
-        var pathImg = "../create-csv-pdf/img/favicon-radius-8px-50.png";
-        var objImg = new Image();
-        objImg.src = pathImg;
-        // ./ creo l'inserimento dell'immagine
-        // lib jsPDF
-        let doc = new jsPDF('p', 'mm', 'a4');
-        // ./lib jsPDF
-        // add image al pdf
-        doc.addImage(objImg, 'PNG', 25, 5);
-        // ./add image al pdf
+        'use strict'
+        try {
+            // creo l'inserimento dell'immagine
+            var pathImg = "../create-csv-pdf/img/favicon-radius-8px-50.png";
+            var objImg = new Image();
+            objImg.src = pathImg;
+            // ./ creo l'inserimento dell'immagine
 
-        // save file
-        doc.save(`${file_name}.pdf`);
-        // .save file
+            // lib jsPDF
+            let doc = new jsPDF('p', 'mm', 'a4');
+            // ./lib jsPDF
+
+            // add image al pdf
+            doc.addImage(objImg, 'PNG', 5, 5);
+            // ./add image al pdf
+
+            // setting text heade
+            doc.setFont('roboto'); // type font
+            doc.setFontType('normal') // bold or italic
+            doc.setFontSize('8'); // pt font
+            doc.setTextColor(0, 0, 139); // darkblue
+            // ./setting text
+
+            // add text
+                // left, top, text
+            doc.text(5, 55, "ID");
+            doc.text(15, 55, "USR");
+            doc.text(35, 55, "PSW");
+            doc.text(50, 55, "EMAIL");
+            doc.text(65, 55, "AGE");
+            // ./add text
+
+            // add line
+            doc.setLineWidth(0.2); // spessore
+            doc.setDrawColor(139, 0, 0); // colore darkred
+            doc.rect(5, 56, 200, 0.1); // left, top, width, height
+            // ./add line
+
+            // dati da visualizzare sul pdf
+            var data = ar;
+            // ./dati da visualizzare sul pdf
+            
+            // var position and num records for page
+            var left = 10;
+            var top = 25;
+            var numRecords = 0;
+            // ./var position and num records for page
+
+            // for populate the pdf head and body
+            for(var i = 0; i < data.length; i++) {
+                for(var j = 0; j < data[i].length; j++) {
+                    if(numRecords == 5) {
+                        // add the page pdf
+                        doc.addPage();
+                        doc.setFontSize(8);
+                        doc.text(5, 15, "ID");
+                        doc.text(15, 15, "USR");
+                        doc.text(30, 15, "PSW");
+                        doc.text(50, 15, "EMAIL");
+                        doc.text(65, 15, "AGE");
+                        // ./add the page pdf
+
+                        // line
+                        doc.setLineWidth(0.2); // spessore
+                        doc.setDrawColor(139, 0, 0); // colore darkred
+                        doc.rect(5, 16, 200, 0.1); // left, top, width, height
+                        // ./line
+
+                        // restore the var
+                        left = 10;
+                        top = 25;
+                        numRecords = 0;
+                        // ./restore the var
+
+                    }// ./numrecords
+                    // set cell border
+                    doc.setlineWidth(0.5); // spessore
+                    doc.setDrawColor(0, 0, 192); // darkblue
+                    doc.rect(5, 17, 20, 4); // left, top, width, heght
+                    // ./set cell border
+
+                    // set color text
+                    doc.setTextColor(139, 0 ,0); // darkred
+                    // ./set color text
+
+                    // rows odd even
+                    if(numRecords % 2 == 0){
+                        doc.setFillColor(173, 216, 230); // background cell
+                        doc.rect(left - 2, top - 3.3, 19.2, 4.2, "F"); // left, top, width, height, Fill or "FD" Fill and Border
+                    } else {
+                        doc.setFillColor(135, 206, 250); // background cell
+                        doc.rect(left - 2, top - 3.3, 19.2, 4.2); // left, top, width, height, Fill or "FD" Fill Border
+                    }
+                    // ./rows odd even
+                    // set font size
+                    doc.fontSize(6); // pt 6
+                    //. /set font size
+                    // add text
+                    doc.text(left + 2, top, data[i][j]);
+                    // ./add text
+                    // increment var left and numRecords
+                    left += 20;
+                    numRecords += 1;
+                    // ./increment var left and numRecords
+                }// ./for j
+                // restore var
+                left = 10;
+                top += 5; 
+                // ./restore var
+            }// ./ for i
+            // ./for populate the pdf head and body
+            
+            // save file
+            throw new Error("File creato con successo");
+            doc.save(`${file_name}.pdf`);
+            // .save file
+        } catch(Exception) {
+            console.error(Exception.message);
+        }
     }
     // ./ create pdf
 } // ./classi
