@@ -212,7 +212,7 @@ class Classi {
     // create pdf
     create_pdf(file_name) {
         // creo l'inserimento dell'immagine
-        var pathImg = "../create-csv-pdf/img/favicon-radius-8px.png";
+        var pathImg = "../create-csv-pdf/img/favicon-radius-8px-50.png";
         var objImg = new Image();
         objImg.src = pathImg;
         // ./ creo l'inserimento dell'immagine
@@ -220,7 +220,7 @@ class Classi {
         let doc = new jsPDF('p', 'mm', 'a4');
         // ./lib jsPDF
         // add image al pdf
-        doc.addImage(objImg, 'PNG', 100, 5);
+        doc.addImage(objImg, 'PNG', 50, 5);
         // ./add image al pdf
 
         // save file
