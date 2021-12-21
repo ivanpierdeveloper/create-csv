@@ -209,6 +209,25 @@ class Classi {
         // console.table(data[0]);
     // ./crea file csv
     }
+    // create pdf
+    create_pdf(file_name) {
+        // creo l'inserimento dell'immagine
+        var pathImg = "../img/favicon-radius-8px.png";
+        var objImg = new Image();
+        objImg.src = pathImg;
+        // ./ creo l'inserimento dell'immagine
+        // lib jsPDF
+        let doc = new jsPDF('p', 'mm', 'a4');
+        // ./lib jsPDF
+        // add image al pdf
+        doc.addImage(objImg, 'PNG', 100, 5);
+        // ./add image al pdf
+
+        // save file
+        doc.save(file_name);
+        // .save file
+    }
+    // ./ create pdf
 } // ./classi
 
 // call Classi
@@ -230,11 +249,15 @@ btnScaricaFileCsv.addEventListener('click', function() {
 // call Funzioni
 // Funzioni.messaggioDiBenvenuto();
 // Funzioni.showMyAlert("primo messaggio di alert", "var(--success)", "var(--white)", "var(--yellow)");
+/* create pdf */
 // button create pdf
 let btn_pdf = document.querySelector('.btn-scarica-file-pdf');
 btn_pdf.addEventListener('click', (e) =>{
+    /*
     console.group("begin");
         console.log("Button-Pdf");
     console.groupEnd("begin");
+    */
 });
 // button create pdf
+/* create pdf*/
