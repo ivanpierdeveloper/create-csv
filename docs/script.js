@@ -254,17 +254,17 @@ class Classi {
 
             // add text
                 // left, top, text
-            doc.text(5, 15, "ID");
-            doc.text(15, 15, "USR");
-            doc.text(35, 15, "PSW");
-            doc.text(52, 15, "EMAIL");
-            doc.text(67, 15, "AGE");
+            doc.text(5, 25, "ID");
+            doc.text(15, 25, "USR");
+            doc.text(35, 25, "PSW");
+            doc.text(52, 25, "EMAIL");
+            doc.text(68, 25, "AGE");
             // ./add text
 
             // add line
             doc.setLineWidth(0.2); // spessore
             doc.setDrawColor(139, 0, 0); // colore darkred
-            doc.rect(5, 17, 200, 0.1); // left, top, width, height
+            doc.rect(5, 26, 200, 0.1); // left, top, width, height
             // ./add line
 
             // dati da visualizzare sul pdf
@@ -290,17 +290,17 @@ class Classi {
                         // add the page pdf
                         doc.addPage();
                         doc.setFontSize(8);
-                        doc.text(5, 15, "ID");
-                        doc.text(15, 15, "USR");
-                        doc.text(30, 15, "PSW");
-                        doc.text(52, 15, "EMAIL");
-                        doc.text(67, 15, "AGE");
+                        doc.text(5, 25, "ID");
+                        doc.text(15, 25, "USR");
+                        doc.text(30, 25, "PSW");
+                        doc.text(52, 25, "EMAIL");
+                        doc.text(68, 25, "AGE");
                         // ./add the page pdf
 
                         // line
                         doc.setLineWidth(0.2); // spessore
                         doc.setDrawColor(139, 0, 0); // colore darkred
-                        doc.rect(5, 17, 200, 0.1); // left, top, width, height
+                        doc.rect(5, 26, 200, 0.1); // left, top, width, height
                         // ./line
 
                         // restore the var
@@ -309,11 +309,11 @@ class Classi {
                         numRecords = 0;
                         // ./restore the var
 
-                    }// ./numrecords
+                    }// ./numRecords
                     // set cell border
-                    doc.setLineWidth(0.5); // spessore
+                    doc.setLineWidth(0.3); // spessore
                     doc.setDrawColor(0, 0, 192); // darkblue
-                    doc.rect(5, 17, 20, 4); // left, top, width, heght
+                    doc.rect(left - 1, top -1 , 20, 4); // left, top, width, heght
                     // ./set cell border
 
                     // set color text
@@ -333,7 +333,7 @@ class Classi {
                     doc.setFontSize(6); // pt 6
                     //. /set font size
                     // add text
-                    doc.text(left + 2, top, data[i][j]);
+                    doc.text(left + 2, top + 2, data[i][j]);
                     // ./add text
                     // increment var left and numRecords
                     left += 20;
