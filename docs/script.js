@@ -257,8 +257,8 @@ class Classi {
             doc.text(5, 15, "ID");
             doc.text(15, 15, "USR");
             doc.text(35, 15, "PSW");
-            doc.text(50, 15, "EMAIL");
-            doc.text(65, 15, "AGE");
+            doc.text(52, 15, "EMAIL");
+            doc.text(67, 15, "AGE");
             // ./add text
 
             // add line
@@ -293,8 +293,8 @@ class Classi {
                         doc.text(5, 15, "ID");
                         doc.text(15, 15, "USR");
                         doc.text(30, 15, "PSW");
-                        doc.text(50, 15, "EMAIL");
-                        doc.text(65, 15, "AGE");
+                        doc.text(52, 15, "EMAIL");
+                        doc.text(67, 15, "AGE");
                         // ./add the page pdf
 
                         // line
