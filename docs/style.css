@@ -50,21 +50,21 @@
     --darkviolet: rgb(48,0,211);
     /* section dark */
     /* section light */
-    --lightblue: rgb();
-    --lightblue: rgb();
-    --lightblue: rgb();
-    --lightblue: rgb();
-    --lightblue: rgb();
-    --lightblue: rgb();
-    --lightblue: rgb();
-    --lightblue: rgb();
-    --lightblue: rgb();
-    --lightblue: rgb();
-    --lightblue: rgb();
-    --lightblue: rgb();
-    --lightblue: rgb();
-    --lightblue: rgb();
-    --lightblue: rgb();
+    --lightblue: rgb(173,216,230);
+    --lightcoral: rgb(240,128,128);
+    --lightcyan: rgb(224,255,255);
+    --lightgoldenrodyellow: rgb(250,250,210);
+    --lightgray: rgb(211,211,211);
+    --lightgreen: rgb(144,238,144);
+    --lightgrey: rgb(211,211,211);
+    --lightpink: rgb(255,182,193);
+    --lightsalmon: rgb(255,160,122);
+    --lightseagreen: rgb(32,178,170);
+    --lightskyblue: rgb(135,206,250);
+    --lightslategray: rgb(119,136,153);
+    --lightslategrey: rgb(119,136,153);
+    --lightsteelblue: rgb(176,196,222);
+    --lightyellow: rgb(255,255,224);
     /* section light */
 } /* var di colori */
 
