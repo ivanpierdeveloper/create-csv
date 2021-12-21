@@ -228,9 +228,25 @@ class Classi {
             // ./add image al pdf
 
             // setting text head
+            /*
+            // The 14 standard PDF fonts are as follows
+            Courier
+            Courier-Bold
+            Courier-BoldOblique
+            Courier-Oblique
+            Helvetica
+            Helvetica-Bold
+            Helvetica-BoldOblique
+            Helvetica-Oblique
+            Symbol
+            Times-Roman
+            Times-Bold
+            Time-Italic
+            Time-BoldItalic
+            */
             // doc.addFont('ArialMS', 'Arial', 'normal');
             // doc.setFont('Arial');
-            doc.setFont('courier'); // type font
+            doc.setFont('Courier'); // type font
             doc.setFontType('normal') // bold or italic
             doc.setFontSize('8'); // pt font
             doc.setTextColor(0, 0, 139); // darkblue
