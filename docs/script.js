@@ -228,7 +228,7 @@ class Classi {
             // ./add image al pdf
 
             // setting text heade
-            doc.setFont('roboto'); // type font
+            doc.setFont('courier'); // type font
             doc.setFontType('normal') // bold or italic
             doc.setFontSize('8'); // pt font
             doc.setTextColor(0, 0, 139); // darkblue
@@ -250,7 +250,13 @@ class Classi {
             // ./add line
 
             // dati da visualizzare sul pdf
-            var data = ar;
+            var data = [
+                ["0002", "Hulk", "def", "hulk@gmail.com", "22"],
+                ["0003", "Ken", "ghi", "ken@gmail.com", "33"],
+                ["0004", "Spiderman", "lmn", "spiderman@gmail.com", "44"],
+                ["0005", "Batman", "opq", "batman@gmail.com", "55"],
+                ["0006", "Superman", "rst", "superman@gmail.com", "77"]
+            ];
             // ./dati da visualizzare sul pdf
             
             // var position and num records for page
