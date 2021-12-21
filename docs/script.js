@@ -115,7 +115,7 @@ class Classi {
             ["0003", "Ken", "ghi", "ken@gmail.com", "33"],
             ["0004", "Spiderman", "lmn", "spiderman@gmail.com", "44"],
             ["0005", "Batman", "opq", "batman@gmail.com", "55"],
-            ["0006", "Superman", "rst", "superman@gmail.com", "33"]
+            ["0006", "Superman", "rst", "superman@gmail.com", "25"]
         ];
      for(var x = 0; x < ar.length; x++) {
          var tr = document.createElement('tr');
@@ -313,7 +313,7 @@ class Classi {
                     // set cell border
                     doc.setLineWidth(0.3); // spessore
                     doc.setDrawColor(0, 0, 192); // darkblue
-                    doc.rect(left - 1, top -1 , 20, 4); // left, top, width, heght
+                    doc.rect(left - 1, top - 1 , 20, 4); // left, top, width, heght
                     // ./set cell border
 
                     // set color text
@@ -323,10 +323,10 @@ class Classi {
                     // rows odd even
                     if(i % 2 == 0){
                         doc.setFillColor(173, 216, 230); // background cell
-                        doc.rect(left - 2, top - 3.3, 19.2, 4.2, "F"); // left, top, width, height, Fill or "FD" Fill and Border
+                        doc.rect(left - 1, top  -1, 19.7, 3.9, "F"); // left, top, width, height, Fill or "FD" Fill and Border
                     } else {
                         doc.setFillColor(135, 206, 250); // background cell
-                        doc.rect(left - 2, top - 3.3, 19.2, 4.2, "F"); // left, top, width, height, Fill or "FD" Fill Border
+                        doc.rect(left - 1, top - 1, 19.7, 3.9, "F"); // left, top, width, height, Fill or "FD" Fill Border
                     }
                     // ./rows odd even
                     // set font size
