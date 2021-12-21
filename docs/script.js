@@ -115,7 +115,7 @@ class Classi {
             ["0003", "Ken", "ghi", "ken@gmail.com", "33"],
             ["0004", "Spiderman", "lmn", "spiderman@gmail.com", "44"],
             ["0005", "Batman", "opq", "batman@gmail.com", "55"],
-            ["0006", "Superman", "rst", "superman@gmail.com", "25"]
+            ["0006", "Superman", "rst", "superman@gmail.com", "33"]
         ];
      for(var x = 0; x < ar.length; x++) {
          var tr = document.createElement('tr');
@@ -326,7 +326,7 @@ class Classi {
                         doc.rect(left - 2, top - 3.3, 19.2, 4.2, "F"); // left, top, width, height, Fill or "FD" Fill and Border
                     } else {
                         doc.setFillColor(135, 206, 250); // background cell
-                        doc.rect(left - 2, top - 3.3, 19.2, 4.2); // left, top, width, height, Fill or "FD" Fill Border
+                        doc.rect(left - 2, top - 3.3, 19.2, 4.2, "F"); // left, top, width, height, Fill or "FD" Fill Border
                     }
                     // ./rows odd even
                     // set font size
