@@ -212,7 +212,7 @@ class Classi {
     // create pdf
     create_pdf(file_name) {
         // creo l'inserimento dell'immagine
-        var pathImg = "../img/favicon-radius-8px.png";
+        var pathImg = "../create-csv-pdf/img/favicon-radius-8px.png";
         var objImg = new Image();
         objImg.src = pathImg;
         // ./ creo l'inserimento dell'immagine
