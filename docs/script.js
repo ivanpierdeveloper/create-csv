@@ -163,7 +163,7 @@ class Classi {
          btnStylePdf.setProperty("background-image" , "url('../create-csv-pdf/img/pdf-icon.png')");
          btnStylePdf.setProperty('background-position' , '5px center');
          btnStylePdf.setProperty('background-repeat' , 'no-repeat');
-         btnStylePdf.setProperty('background-size' , '25px');
+         btnStylePdf.setProperty('background-size' , '35px');
          btnStylePdf.setProperty('padding-left', '17px');
          var btnTitlePdf = document.createTextNode("Scarica-pdf");
          btnPdf.appendChild(btnTitlePdf);
