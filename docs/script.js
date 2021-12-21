@@ -115,7 +115,7 @@ class Classi {
             ["0003", "Ken", "ghi", "ken@gmail.com", "33"],
             ["0004", "Spiderman", "lmn", "spiderman@gmail.com", "44"],
             ["0005", "Batman", "opq", "batman@gmail.com", "55"],
-            ["0006", "Superman", "rst", "superman@gmail.com", "33"]
+            ["0006", "Superman", "rst", "superman@gmail.com", "25"]
         ];
      for(var x = 0; x < ar.length; x++) {
          var tr = document.createElement('tr');
