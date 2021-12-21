@@ -115,7 +115,7 @@ class Classi {
             ["0003", "Ken", "ghi", "ken@gmail.com", "33"],
             ["0004", "Spiderman", "lmn", "spiderman@gmail.com", "44"],
             ["0005", "Batman", "opq", "batman@gmail.com", "55"],
-            ["0006", "Superman", "rst", "superman@gmail.com", "25"]
+            ["0006", "Superman", "rst", "superman@gmail.com", "33"]
         ];
      for(var x = 0; x < ar.length; x++) {
          var tr = document.createElement('tr');
@@ -254,11 +254,11 @@ class Classi {
 
             // add text
                 // left, top, text
-            doc.text(5, 25, "ID");
-            doc.text(15, 25, "USR");
-            doc.text(35, 25, "PSW");
-            doc.text(52, 25, "EMAIL");
-            doc.text(68, 25, "AGE");
+            doc.text(20, 25, "ID");
+            doc.text(40, 25, "USR");
+            doc.text(60, 25, "PSW");
+            doc.text(80, 25, "EMAIL");
+            doc.text(100, 25, "AGE");
             // ./add text
 
             // add line
