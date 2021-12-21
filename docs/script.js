@@ -115,7 +115,7 @@ class Classi {
             ["0003", "Ken", "ghi", "ken@gmail.com", "33"],
             ["0004", "Spiderman", "lmn", "spiderman@gmail.com", "44"],
             ["0005", "Batman", "opq", "batman@gmail.com", "55"],
-            ["0006", "Superman", "rst", "superman@gmail.com", "78"]
+            ["0006", "Superman", "rst", "superman@gmail.com", "55"]
         ];
      for(var x = 0; x < ar.length; x++) {
          var tr = document.createElement('tr');
@@ -286,7 +286,7 @@ class Classi {
             // for populate the pdf head and body
             for(var i = 0; i < data.length; i++) {
                 for(var j = 0; j < data[i].length; j++) {
-                    if(numRecords == 5) {
+                    if(numRecords == 15) {
                         // add the page pdf
                         doc.addPage();
                         doc.setFontSize(8);
