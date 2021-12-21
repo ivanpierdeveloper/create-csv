@@ -227,12 +227,14 @@ class Classi {
             doc.addImage(objImg, 'PNG', 5, 5);
             // ./add image al pdf
 
-            // setting text heade
+            // setting text head
+            // doc.addFont('ArialMS', 'Arial', 'normal');
+            // doc.setFont('Arial');
             doc.setFont('courier'); // type font
             doc.setFontType('normal') // bold or italic
             doc.setFontSize('8'); // pt font
             doc.setTextColor(0, 0, 139); // darkblue
-            // ./setting text
+            // ./setting text head
 
             // add text
                 // left, top, text
