@@ -220,7 +220,7 @@ class Classi {
         let doc = new jsPDF('p', 'mm', 'a4');
         // ./lib jsPDF
         // add image al pdf
-        doc.addImage(objImg, 'PNG', 50, 5);
+        doc.addImage(objImg, 'PNG', 25, 5);
         // ./add image al pdf
 
         // save file
