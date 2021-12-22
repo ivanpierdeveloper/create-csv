@@ -1,4 +1,5 @@
 'use strict'
+//############################################################### FUNZIONI ###################################./
 const Funzioni = {
         // messaggio di benvenuto
         messaggioDiBenvenuto: function() {
@@ -33,9 +34,37 @@ const Funzioni = {
                 'top': '-50%',
                 'transition': '2s'
             });
+        },
+        loader: function() {
+            const fullScreen = document.querySelector(".full-screen");
+            const loader = document.querySelector(".loader");
+            $(fullScreen)
+                .fadeOut("slow")
+                .css({
+                    "display": "block"
+                });
+            $(loader)
+                .fadeOut('slow')
+                .css({
+                    "display": "block"
+                });
+        },
+        loaderHide: function() {
+            const fullScreen = document.querySelector(".full-screen");
+            const loader = document.querySelector(".loader");
+            $(fullScreen)
+                .fadeOut("slow")
+                .css({
+                    "display": "none"
+                });
+            $(loader)
+                .fadeOut('slow')
+                .css({
+                    "display": "none"
+                });
         }
     } // ./funzioni
-
+//################################################################# CLASSI ###########################################./
 class Classi {
     // metodi
     // messagio di conferma
@@ -488,7 +517,12 @@ btn_pdf.addEventListener('click', (e) => {
         console.log("Button-Pdf");
     console.groupEnd("begin");
     */
-    cls.create_pdf("Testing");
+    var question = prompt("Scegliere un nome da dare al file", "Inserire qui");
+    if (question) {
+        cls.create_pdf(question);
+    } else if (question == "") {
+        Funzioni.showMyAlert("non hai scelto il nome file", "var(--warning)", "var(--dark)", "var(--yellow)");
+    }
 });
 // button create pdf
 /* create pdf*/
