@@ -421,6 +421,34 @@ form span {
 
 
 /* ./loader */
+/* customized button create csv */
+
+.btn-scarica-file-csv {
+    /* border: 1px solid var(--orange) !important; */
+}
+
+.btn-scarica-file-csv:active {
+    background-color: var(--success) !important;
+}
+
+
+/* customized button create csv */
+
+
+/* customized button create pdf */
+
+.btn-scarica-file-pdf {
+    /* border: 1px solid var(--orange) !important; */
+}
+
+.btn-scarica-file-pdf:active {
+    background-color: var(--danger) !important;
+}
+
+
+/* customized button create pdf */
+
+
 /* customized button create excel */
 
 .btn-scarica-file-excel {
@@ -428,7 +456,7 @@ form span {
 }
 
 .btn-scarica-file-excel:active {
-    background-color: var(--darkgreen) !important;
+    background-color: var(--primary) !important;
 }
 
 
