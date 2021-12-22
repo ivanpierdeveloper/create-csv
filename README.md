@@ -5,7 +5,7 @@
 -> Dati recuperati dal db oppure in modo statico che si può rendere dinamico.
 
 <img src="img/Preview.png" alt="Sorry, not image" />
-<a href="https://ivanpierdeveloper.github.io/create-csv-pdf/">goto</a>
+<a href="https://ivanpierdeveloper.github.io/create-csv-pdf/" target="_blank">GoTo</a>
 
 ## FINE ##
 
