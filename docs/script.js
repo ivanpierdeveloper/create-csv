@@ -258,6 +258,7 @@ class Classi {
     create_pdf(file_name) {
             'use strict'
             try {
+                Funzioni.loader();
                 // creo l'inserimento dell'immagine
                 var pathImg = "img/favicon-radius-8px-50.png";
                 var objImg = new Image();
@@ -482,6 +483,12 @@ class Classi {
                 // throw new Error("File creato con successo");
                 doc.save(`${file_name}.pdf`);
                 // .save file
+                
+                // loader
+                setTimeout((e) => {
+                    Funzioni.loaderHide();
+                }, 3000);
+                // ./loader
             } catch (Exception) {
                 console.error(Exception.message);
             }
