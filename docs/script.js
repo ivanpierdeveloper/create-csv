@@ -178,7 +178,7 @@ class Classi {
             btn.setAttribute('class', 'btn-scarica-file-csv');
             var btnStyle = btn.style;
             btnStyle.setProperty('cursor', 'pointer');
-            btnStyle.setProperty('background-color', 'var(--transparent)');
+            btnStyle.setProperty('background-color', 'var(--transparent-blue)');
             btnStyle.setProperty('border', '1px solid var(--silver)');
             btnStyle.setProperty('border-radius', '8px');
             btnStyle.setProperty('color', 'var(--silver)');
@@ -198,7 +198,7 @@ class Classi {
             btnPdf.setAttribute('class', 'btn-scarica-file-pdf');
             var btnStylePdf = btnPdf.style;
             btnStylePdf.setProperty('cursor', 'pointer');
-            btnStylePdf.setProperty('background-color', 'var(--transparent)');
+            btnStylePdf.setProperty('background-color', 'var(--transparent-blue)');
             btnStylePdf.setProperty('border', '1px solid var(--silver)');
             btnStylePdf.setProperty('border-radius', '8px');
             btnStylePdf.setProperty('color', 'var(--silver)');
@@ -219,7 +219,7 @@ class Classi {
              btnExcel.setAttribute('class', 'btn-scarica-file-excel');
              var btnStyleExcel = btnExcel.style;
              btnStyleExcel.setProperty('cursor', 'pointer');
-             btnStyleExcel.setProperty('background-color', 'var(--transparent)');
+             btnStyleExcel.setProperty('background-color', 'var(--transparent-blue)');
              btnStyleExcel.setProperty('border', '1px solid var(--silver)');
              btnStyleExcel.setProperty('border-radius', '8px');
              btnStyleExcel.setProperty('color', 'var(--silver)');
