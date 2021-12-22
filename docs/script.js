@@ -388,7 +388,7 @@ class Classi {
 
                 // dati da visualizzare sul pdf
                 var data = cls.data();
-                
+
                 // ./dati da visualizzare sul pdf
 
                 // var position and num records for page
@@ -597,25 +597,23 @@ exportTableToExcel(tableID, filename) {
         }
     }
     // EXPORT TABLE TO EXCEL
-        // create excel
-        createExcel() {
-            'use strict'
-            try {
-                /*
-                console.group('head');
-                console.log("Excel");
-                console.groupEnd("head");
-                */
-                // throw new Error("Nuovo messaggio di errore");
-                Funzioni.loader();
-                setTimeout((e) => {
-                    Funzioni.loaderHide();
-                }, 3000);
-            } catch (Exception) {
-                console.error(Exception.message);
-            }
+       // create excel
+    createExcel(tableID, fileName) {
+        'use strict'
+        try {
+            /*
+            console.group('head');
+            console.log("Excel");
+            console.groupEnd("head");
+            */
+            // throw new Error("Nuovo messaggio di errore");
+            Funzioni.loader();
+            cls.strtable(tableID, fileName);
+        } catch (Exception) {
+            console.error(Exception.message);
         }
-        // ./create excel
+    }
+    // ./create excel
         
 } // ./classi
 
