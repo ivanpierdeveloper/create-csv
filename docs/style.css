@@ -421,3 +421,15 @@ form span {
 
 
 /* ./loader */
+/* customized button create excel */
+
+.btn-scarica-file-excel {
+    /* border: 1px solid var(--orange) !important; */
+}
+
+.btn-scarica-file-excel:active {
+    background-color: var(--darkgreen) !important;
+}
+
+
+/* customized button create excel */
