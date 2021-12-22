@@ -178,10 +178,10 @@ class Classi {
             btn.setAttribute('class', 'btn-scarica-file-csv');
             var btnStyle = btn.style;
             btnStyle.setProperty('cursor', 'pointer');
-            btnStyle.setProperty('background-color', 'var(--warning)');
-            btnStyle.setProperty('border', '1px solid var(--dark)');
+            btnStyle.setProperty('background-color', 'var(--transparent)');
+            btnStyle.setProperty('border', '1px solid var(--silver)');
             btnStyle.setProperty('border-radius', '8px');
-            btnStyle.setProperty('color', 'var(--dark)');
+            btnStyle.setProperty('color', 'var(--silver)');
             btnStyle.setProperty('height', '40px');
             btnStyle.setProperty('width', '125px');
             btnStyle.setProperty("background-image", "url('img/csv-icon-12.png')");
@@ -198,10 +198,10 @@ class Classi {
             btnPdf.setAttribute('class', 'btn-scarica-file-pdf');
             var btnStylePdf = btnPdf.style;
             btnStylePdf.setProperty('cursor', 'pointer');
-            btnStylePdf.setProperty('background-color', 'var(--warning)');
-            btnStylePdf.setProperty('border', '1px solid var(--dark)');
+            btnStylePdf.setProperty('background-color', 'var(--transparent)');
+            btnStylePdf.setProperty('border', '1px solid var(--silver)');
             btnStylePdf.setProperty('border-radius', '8px');
-            btnStylePdf.setProperty('color', 'var(--dark)');
+            btnStylePdf.setProperty('color', 'var(--silver)');
             btnStylePdf.setProperty('height', '40px');
             btnStylePdf.setProperty('width', '125px');
             btnStylePdf.setProperty("background-image", "url('img/icon-pdf.png')");
@@ -209,6 +209,7 @@ class Classi {
             btnStylePdf.setProperty('background-repeat', 'no-repeat');
             btnStylePdf.setProperty('background-size', '35px');
             btnStylePdf.setProperty('padding-left', '17px');
+            btnStylePdf.setProperty('margin-left', '5px');
             var btnTitlePdf = document.createTextNode("Scarica-pdf");
             btnPdf.appendChild(btnTitlePdf);
             // ./button pdf
@@ -218,10 +219,10 @@ class Classi {
              btnExcel.setAttribute('class', 'btn-scarica-file-excel');
              var btnStyleExcel = btnExcel.style;
              btnStyleExcel.setProperty('cursor', 'pointer');
-             btnStyleExcel.setProperty('background-color', 'var(--warning)');
-             btnStyleExcel.setProperty('border', '1px solid var(--dark)');
+             btnStyleExcel.setProperty('background-color', 'var(--transparent)');
+             btnStyleExcel.setProperty('border', '1px solid var(--silver)');
              btnStyleExcel.setProperty('border-radius', '8px');
-             btnStyleExcel.setProperty('color', 'var(--dark)');
+             btnStyleExcel.setProperty('color', 'var(--silver)');
              btnStyleExcel.setProperty('height', '40px');
              btnStyleExcel.setProperty('width', '125px');
              btnStyleExcel.setProperty("background-image", "url('img/icon-excel.png')");
@@ -229,6 +230,7 @@ class Classi {
              btnStyleExcel.setProperty('background-repeat', 'no-repeat');
              btnStyleExcel.setProperty('background-size', '25px');
              btnStyleExcel.setProperty('padding-left', '18px');
+             btnStyleExcel.setProperty('margin-left', '5px');
              var btnTitleExcel = document.createTextNode("Scarica-excel");
              btnExcel.appendChild(btnTitleExcel);
              // ./button excel
