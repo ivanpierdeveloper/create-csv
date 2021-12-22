@@ -521,12 +521,26 @@ class Classi {
             }
         }
         // ./ create pdf
+        // create excel
+        createExcel() {
+            'use strict'
+            try {
+                console.group('head');
+                console.log("Excel");
+                console.groupEnd("head");
+            } catch (Exception) {
+                console.error(Exception.message);
+            }
+        }
+        // ./create excel
 } // ./classi
 
 // call Classi
 const cls = new Classi()
-    // cls.messaggioDiConferma("Salvato con successo");
+// cls.messaggioDiConferma("Salvato con successo");
+
 cls.createTable();
+
 // func create file csv
 var btnScaricaFileCsv = document.querySelector('.btn-scarica-file-csv');
 btnScaricaFileCsv.addEventListener('click', function() {
@@ -542,7 +556,7 @@ btnScaricaFileCsv.addEventListener('click', function() {
 // call Funzioni
 // Funzioni.messaggioDiBenvenuto();
 // Funzioni.showMyAlert("primo messaggio di alert", "var(--success)", "var(--white)", "var(--yellow)");
-/* create pdf */
+// create pdf
 // button create pdf
 let btn_pdf = document.querySelector('.btn-scarica-file-pdf');
 btn_pdf.addEventListener('click', (e) => {
@@ -559,4 +573,7 @@ btn_pdf.addEventListener('click', (e) => {
     }
 });
 // button create pdf
-/* create pdf*/
+// ./create pdf
+// create excel
+
+// ./create excel
