@@ -204,7 +204,7 @@ class Classi {
             btnStylePdf.setProperty('color', 'var(--dark)');
             btnStylePdf.setProperty('height', '40px');
             btnStylePdf.setProperty('width', '125px');
-            btnStylePdf.setProperty("background-image", "url('img/pdf-icon.png')");
+            btnStylePdf.setProperty("background-image", "url('img/icon-pdf.png')");
             btnStylePdf.setProperty('background-position', '5px center');
             btnStylePdf.setProperty('background-repeat', 'no-repeat');
             btnStylePdf.setProperty('background-size', '35px');
