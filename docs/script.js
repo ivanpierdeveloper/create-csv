@@ -462,8 +462,10 @@ class Classi {
                         // set color text
                         // doc.setTextColor(139, 0, 0); // darkred
                         doc.setTextColor(255, 193, 7); // yellow
-                        if (j <= 2 || j == 4) {
+                        if (j == 0 || j == 2 || j == 4) {
                             doc.text(left + 9.5, top + 2.7, data[i][j]);
+                        } else if (j == 1) {
+                            doc.text(left + 1, top + 2.7, data[i][j]);
                         } else {
                             doc.text(left + 10, top + 2.7, data[i][j]);
                         }
