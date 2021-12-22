@@ -318,7 +318,7 @@ class Classi {
                 // title pdf
                 doc.setFontSize('18'); // pt font
                 doc.setTextColor(0, 0, 139); // darkblue
-                doc.text(60, 10, "CREATE FILE CSV E PDF");
+                doc.text(55, 10, "CREATE FILE CSV, PDF E EXCEL");
 
                 // restore font and color
                 doc.setFontSize('8'); // pt font
