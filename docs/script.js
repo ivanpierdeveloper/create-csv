@@ -255,9 +255,13 @@ class Classi {
             document.body.appendChild(download_link);
 
             download_link.click();
+            setTimeout((e) => {
+                Funzioni.loaderHide();
+            }, 3000);
         } // ./ scarica file csv
         // crea file csv
     htmlToCSV(html, filename) {
+            Funzioni.loader();
             var data = [];
             var rows = document.querySelectorAll("table tr");
             for (var i = 0; i < rows.length; i++) {
