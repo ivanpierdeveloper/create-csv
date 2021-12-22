@@ -353,7 +353,7 @@ class Classi {
                 // for populate the pdf head and body
                 for (var i = 0; i < data.length; i++) {
                     for (var j = 0; j < data[i].length; j++) {
-                        if (numRecords == 15) {
+                        if (numRecords == 100) {
                             // add the page pdf
                             doc.addPage();
                             // add cell to head id
