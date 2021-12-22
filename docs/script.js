@@ -171,28 +171,8 @@ class Classi {
             tr1.appendChild(td5);
             table.appendChild(tr1);
 
-            var ar = [
-                ["0002", "Hulk", "abc123", "hulk@gmail.com", "22"],
-                ["0003", "Ken", "abc456", "ken@gmail.com", "33"],
-                ["0004", "Spiderman", "abc789", "spiderman@gmail.com", "44"],
-                ["0005", "Batman", "abc012", "batman@gmail.com", "55"],
-                ["0006", "Superman", "abc034", "superman@gmail.com", "25"],
-                ["0007", "Uomo tigre", "qwe123", "uomotigre@gmail.com", "33"],
-                ["0008", "Goldrake", "qwe456", "goldrake@gmail.com", "44"],
-                ["0009", "Mazinga Z", "qwe789", "mazingaz@gmail.com", "55"],
-                ["0010", "Gig robot", "qwe012", "gigrobot@gmail.com", "58"],
-                ["0011", "Pluto", "qwe0456", "pluto@gmail.com", "68"],
-                ["0012", "Topolino", "qwe0789", "topolino@gmail.com", "70"],
-                ["0013", "Braccio di ferro", "zxc123", "bracciodiferro@gmail.com", "64"],
-                ["0014", "Olivia", "zxc345", "olivia@gmail.com", "60"],
-                ["0015", "Bluto", "zxc678", "bluto@gmail.com", "65"],
-                ["0016", "Grande puffo", "zxc890", "grandepuffo@gmail.com", "80"],
-                ["0017", "Puffetta", "zxc012", "puffetta@gmail.com", "75"],
-                ["0018", "Paperino", "zxc034", "paperino@gmail.com", "48"],
-                ["0019", "Paperina", "zxc056", "paperina@gmail.com", "42"],
-                ["0020", "Tom", "zxc078", "top@gmail.com", "50"],
-                ["0021", "Jerry", "zxc090", "jerry@gmail.com", "49"]
-            ];
+            var ar = cls.data();
+
             for (var x = 0; x < ar.length; x++) {
                 var tr = document.createElement('tr');
                 for (var y = 0; y < 5; y++) {
@@ -407,29 +387,8 @@ class Classi {
                 // ./add line
 
                 // dati da visualizzare sul pdf
-                var data = [
-                    ["0001", "Ivanpier", "abc123", "ivanpier@gmail.com", "44"],
-                    ["0002", "Hulk", "abc123", "hulk@gmail.com", "22"],
-                    ["0003", "Ken", "abc456", "ken@gmail.com", "33"],
-                    ["0004", "Spiderman", "abc789", "spiderman@gmail.com", "44"],
-                    ["0005", "Batman", "abc012", "batman@gmail.com", "55"],
-                    ["0006", "Superman", "abc034", "superman@gmail.com", "25"],
-                    ["0007", "Uomo tigre", "qwe123", "uomotigre@gmail.com", "33"],
-                    ["0008", "Goldrake", "qwe456", "goldrake@gmail.com", "44"],
-                    ["0009", "Mazinga Z", "qwe789", "mazingaz@gmail.com", "55"],
-                    ["0010", "Gig robot", "qwe012", "gigrobot@gmail.com", "58"],
-                    ["0011", "Pluto", "qwe0456", "pluto@gmail.com", "68"],
-                    ["0012", "Topolino", "qwe0789", "topolino@gmail.com", "70"],
-                    ["0013", "Braccio di ferro", "zxc123", "bracciodiferro@gmail.com", "64"],
-                    ["0014", "Olivia", "zxc345", "olivia@gmail.com", "60"],
-                    ["0015", "Bluto", "zxc678", "bluto@gmail.com", "65"],
-                    ["0016", "Grande puffo", "zxc890", "grandepuffo@gmail.com", "80"],
-                    ["0017", "Puffetta", "zxc012", "puffetta@gmail.com", "75"],
-                    ["0018", "Paperino", "zxc034", "paperino@gmail.com", "48"],
-                    ["0019", "Paperina", "zxc056", "paperina@gmail.com", "42"],
-                    ["0020", "Tom", "zxc078", "top@gmail.com", "50"],
-                    ["0021", "Jerry", "zxc090", "jerry@gmail.com", "49"]
-                ];
+                var data = cls.data();
+                
                 // ./dati da visualizzare sul pdf
 
                 // var position and num records for page
