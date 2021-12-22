@@ -527,15 +527,50 @@ class Classi {
             }
         }
         // ./ create pdf
-        // EXPORT TABLE TO EXCEL
-    exportTableToExcel(tableID, filename) {
+         // STRTABLE
+    strtable(tableID, nomefile) {
+        var data = cls.data();
+        var td = "";
+        var table = '<table class="table-excel" border="2px">' +
+            '<thead>' +
+            '<caption>dati caricati per creare file</caption>' +
+            '<tr>' +
+            '<th>ID</th>' +
+            '<th>USR</th>' +
+            '<th>PSW</th>' +
+            '<th>EMAIL</th>' +
+            '<th>AGE</th>' +
+            '</tr>' +
+            '</thead>' +
+            '<tbody>';
+        for (var i = 0; i < data.length; i++) {
+            if (i % 2 == 0) {
+                table += '<tr style="background-color: rgb(32, 178, 170); color: white; text-align: center;">';
+            } else {
+                table += '<tr style="background-color: rgb(135, 206, 250); color: white; text-align: center;">';
+            }
+            for (var j = 0; j < data[i].length; j++) {
+                // if (tipo[i] == "NIL") { continue };
+                td += '<td>' + data[i][j] + '</td>';
+            } // ./for j
+            table += `${td}</tr>`;
+            td = "";
+        } // ./for i
+
+        table += '</tbody>' +
+            '</table>';
+        document.querySelector('.table-excel').innerHTML = table;
+        this.exportTableToExcel(tableID, nomefile);
+        // fnExcelReport('table_fatture');
+    } // strtable()
+    // STRTABLE
+    // EXPORT TABLE TO EXCEL
+exportTableToExcel(tableID, filename) {
         var downloadLink;
         var dataType = 'application/vnd.ms-excel';
-        var tableSelect = document.getElementsByClassName(tableID)[0];
-        $(`.table-excel tr th, .table-excel tr td`).css({
-            'border': '1px solid #000000'
+        var tableSelect = document.querySelector("." + tableID);
 
-        });
+
         var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
 
         // Specify file name
@@ -560,14 +595,17 @@ class Classi {
 
             //triggering the function
             downloadLink.click();
+
             setTimeout((e) => {
                 Funzioni.loaderHide();
+                /*
                 $(`.table-excel tr th`).css({
                     'border': '1px solid #dc3545'
                 });
                 $(`.table-excel tr td`).css({
                     'border': '1px solid #fd7e14'
                 });
+                */
             }, 3000);
         }
     }
@@ -591,7 +629,7 @@ class Classi {
             }
         }
         // ./create excel
-        // ./create excel
+        
 } // ./classi
 
 // call Classi
@@ -636,7 +674,7 @@ btn_pdf.addEventListener('click', (e) => {
 // create excel
 var btnExcel = document.querySelector('.btn-scarica-file-excel');
 btnExcel.addEventListener('click', (e) => {
-    cls.createExcel();
+    cls.createExcel("table-excel", "Testing");
 });
 /*
 btnExcel.addEventListener('mousedown', (e) => {
