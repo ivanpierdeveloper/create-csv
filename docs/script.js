@@ -213,9 +213,30 @@ class Classi {
             btnPdf.appendChild(btnTitlePdf);
             // ./button pdf
 
+             // button excel
+             var btnExcel = document.createElement('button');
+             btnExcel.setAttribute('class', 'btn-scarica-file-pdf');
+             var btnStyleExcel = btnExcel.style;
+             btnStyleExcel.setProperty('cursor', 'pointer');
+             btnStyleExcel.setProperty('background-color', 'var(--warning)');
+             btnStyleExcel.setProperty('border', '1px solid var(--dark)');
+             btnStyleExcel.setProperty('border-radius', '8px');
+             btnStyleExcel.setProperty('color', 'var(--dark)');
+             btnStyleExcel.setProperty('height', '40px');
+             btnStyleExcel.setProperty('width', '125px');
+             btnStyleExcel.setProperty("background-image", "url('img/icon-excel.png')");
+             btnStyleExcel.setProperty('background-position', '3px center');
+             btnStyleExcel.setProperty('background-repeat', 'no-repeat');
+             btnStyleExcel.setProperty('background-size', '25px');
+             btnStyleExcel.setProperty('padding-left', '18px');
+             var btnTitleExcel = document.createTextNode("Scarica-excel");
+             btnExcel.appendChild(btnTitleExcel);
+             // ./button excel
+
             divContent.appendChild(table);
             divContent.appendChild(btn);
             divContent.appendChild(btnPdf);
+            divContent.appendChild(btnExcel);
         } // create table
         // scarica file csv
     downloadCSVFile(csv, filename) {
