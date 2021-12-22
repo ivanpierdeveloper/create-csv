@@ -532,9 +532,9 @@ class Classi {
             '<tbody>';
         for (var i = 0; i < data.length; i++) {
             if (i % 2 == 0) {
-                table += '<tr style="background-color: rgb(32, 178, 170); color: white; text-align: center;">';
+                table += '<tr style="background-color: rgb(32, 178, 170); color: white; text-align: center; height: 20px;">';
             } else {
-                table += '<tr style="background-color: rgb(135, 206, 250); color: white; text-align: center;">';
+                table += '<tr style="background-color: rgb(135, 206, 250); color: white; text-align: center; height: 20px;">';
             }
             for (var j = 0; j < data[i].length; j++) {
                 // if (tipo[i] == "NIL") { continue };
