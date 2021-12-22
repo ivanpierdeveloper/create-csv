@@ -77,7 +77,11 @@ class Classi {
 
             var table = document.createElement('table');
             var caption = document.createElement('caption');
-            var textCaption = document.createTextNode("dati caricati per creare file csv");
+            var textCaption = document.createTextNode("dati caricati per creare file");
+            table.classList.add('table-excel');
+            // table.classList.remove('table-excel');
+            // or
+            // table.setAttribute('class', 'table-excel');
             caption.appendChild(textCaption);
             table.appendChild(caption)
 
@@ -523,6 +527,51 @@ class Classi {
             }
         }
         // ./ create pdf
+        // EXPORT TABLE TO EXCEL
+    exportTableToExcel(tableID, filename) {
+        var downloadLink;
+        var dataType = 'application/vnd.ms-excel';
+        var tableSelect = document.getElementsByClassName(tableID)[0];
+        $(`.table-excel tr th, .table-excel tr td`).css({
+            'border': '1px solid #000000'
+
+        });
+        var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
+
+        // Specify file name
+        filename = filename ? filename + '.xls' : 'excel_data.xls';
+
+        // Create download link element
+        downloadLink = document.createElement("a");
+
+        document.body.appendChild(downloadLink);
+
+        if (navigator.msSaveOrOpenBlob) {
+            var blob = new Blob(['\ufeff', tableHTML], {
+                type: dataType
+            });
+            navigator.msSaveOrOpenBlob(blob, filename);
+        } else {
+            // Create a link to the file
+            downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
+
+            // Setting the file name
+            downloadLink.download = filename;
+
+            //triggering the function
+            downloadLink.click();
+            setTimeout((e) => {
+                Funzioni.loaderHide();
+                $(`.table-excel tr th`).css({
+                    'border': '1px solid #dc3545'
+                });
+                $(`.table-excel tr td`).css({
+                    'border': '1px solid #fd7e14'
+                });
+            }, 3000);
+        }
+    }
+    // EXPORT TABLE TO EXCEL
         // create excel
         createExcel() {
             'use strict'
