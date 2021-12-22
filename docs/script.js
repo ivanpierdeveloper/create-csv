@@ -215,7 +215,7 @@ class Classi {
 
              // button excel
              var btnExcel = document.createElement('button');
-             btnExcel.setAttribute('class', 'btn-scarica-file-pdf');
+             btnExcel.setAttribute('class', 'btn-scarica-file-excel');
              var btnStyleExcel = btnExcel.style;
              btnStyleExcel.setProperty('cursor', 'pointer');
              btnStyleExcel.setProperty('background-color', 'var(--warning)');
@@ -575,5 +575,8 @@ btn_pdf.addEventListener('click', (e) => {
 // button create pdf
 // ./create pdf
 // create excel
-
+var btnExcel = document.querySelector('.btn-scarica-file-excel');
+btnExcel.addEventListener('click', (e) => {
+    cls.createExcel();
+});
 // ./create excel
