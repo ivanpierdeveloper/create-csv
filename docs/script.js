@@ -578,6 +578,9 @@ btn_pdf.addEventListener('click', (e) => {
 // ./create pdf
 // create excel
 var btnExcel = document.querySelector('.btn-scarica-file-excel');
+btnExcel.addEventListener('click', (e) => {
+    cls.createExcel();
+});
 /*
 btnExcel.addEventListener('mousedown', (e) => {
     btnExcel.style.setProperty('background-color', 'var(--primary');
