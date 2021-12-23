@@ -1,5 +1,5 @@
 'use strict'
-//############################################################### FUNZIONI ###################################./
+//############################################################### FUNCTION #######################################.//
 const Funzioni = {
         // messaggio di benvenuto
         messaggioDiBenvenuto: function() {
@@ -64,7 +64,7 @@ const Funzioni = {
                 });
         }
     } // ./funzioni
-//################################################################# CLASSI ###########################################./
+    //################################################# CLASS ################################################.//
 class Classi {
     // metodi
     // messagio di conferma
@@ -73,32 +73,32 @@ class Classi {
         }
         //  db data
     data() {
-        // dati da visualizzare sul pdf
-        var data = [
-            ["0001", "Ivanpier", "abc123", "ivanpier@gmail.com", "44"],
-            ["0002", "Hulk", "abc123", "hulk@gmail.com", "22"],
-            ["0003", "Ken", "abc456", "ken@gmail.com", "33"],
-            ["0004", "Spiderman", "abc789", "spiderman@gmail.com", "44"],
-            ["0005", "Batman", "abc012", "batman@gmail.com", "55"],
-            ["0006", "Superman", "abc034", "superman@gmail.com", "25"],
-            ["0007", "Uomo tigre", "qwe123", "uomotigre@gmail.com", "33"],
-            ["0008", "Goldrake", "qwe456", "goldrake@gmail.com", "44"],
-            ["0009", "Mazinga Z", "qwe789", "mazingaz@gmail.com", "55"],
-            ["0010", "Gig robot", "qwe012", "gigrobot@gmail.com", "58"],
-            ["0011", "Pluto", "qwe0456", "pluto@gmail.com", "68"],
-            ["0012", "Topolino", "qwe0789", "topolino@gmail.com", "70"],
-            ["0013", "Braccio di ferro", "zxc123", "bracciodiferro@gmail.com", "64"],
-            ["0014", "Olivia", "zxc345", "olivia@gmail.com", "60"],
-            ["0015", "Bluto", "zxc678", "bluto@gmail.com", "65"],
-            ["0016", "Grande puffo", "zxc890", "grandepuffo@gmail.com", "80"],
-            ["0017", "Puffetta", "zxc012", "puffetta@gmail.com", "75"],
-            ["0018", "Paperino", "zxc034", "paperino@gmail.com", "48"],
-            ["0019", "Paperina", "zxc056", "paperina@gmail.com", "42"],
-            ["0020", "Tom", "zxc078", "top@gmail.com", "50"],
-            ["0021", "Jerry", "zxc090", "jerry@gmail.com", "49"]
-        ];
-        return data;
-    }
+            // dati da visualizzare sul pdf
+            var data = [
+                ["0001", "Ivanpier", "abc123", "ivanpier@gmail.com", "44"],
+                ["0002", "Hulk", "abc123", "hulk@gmail.com", "22"],
+                ["0003", "Ken", "abc456", "ken@gmail.com", "33"],
+                ["0004", "Spiderman", "abc789", "spiderman@gmail.com", "44"],
+                ["0005", "Batman", "abc012", "batman@gmail.com", "55"],
+                ["0006", "Superman", "abc034", "superman@gmail.com", "25"],
+                ["0007", "Uomo tigre", "qwe123", "uomotigre@gmail.com", "33"],
+                ["0008", "Goldrake", "qwe456", "goldrake@gmail.com", "44"],
+                ["0009", "Mazinga Z", "qwe789", "mazingaz@gmail.com", "55"],
+                ["0010", "Gig robot", "qwe012", "gigrobot@gmail.com", "58"],
+                ["0011", "Pluto", "qwe0456", "pluto@gmail.com", "68"],
+                ["0012", "Topolino", "qwe0789", "topolino@gmail.com", "70"],
+                ["0013", "Braccio di ferro", "zxc123", "bracciodiferro@gmail.com", "64"],
+                ["0014", "Olivia", "zxc345", "olivia@gmail.com", "60"],
+                ["0015", "Bluto", "zxc678", "bluto@gmail.com", "65"],
+                ["0016", "Grande puffo", "zxc890", "grandepuffo@gmail.com", "80"],
+                ["0017", "Puffetta", "zxc012", "puffetta@gmail.com", "75"],
+                ["0018", "Paperino", "zxc034", "paperino@gmail.com", "48"],
+                ["0019", "Paperina", "zxc056", "paperina@gmail.com", "42"],
+                ["0020", "Tom", "zxc078", "top@gmail.com", "50"],
+                ["0021", "Jerry", "zxc090", "jerry@gmail.com", "49"]
+            ];
+            return data;
+        }
         // create element table
     createTable() {
             const divContent = document.querySelector('.content');
@@ -106,7 +106,7 @@ class Classi {
             var table = document.createElement('table');
             var caption = document.createElement('caption');
             var textCaption = document.createTextNode("dati caricati per creare file");
-            table.classList.add('table-excel');
+            table.classList.add('table-excel-dinamic');
             // table.classList.remove('table-excel');
             // or
             // table.setAttribute('class', 'table-excel');
@@ -161,7 +161,7 @@ class Classi {
             td4.appendChild(texttd4);
 
             var td5 = document.createElement('td');
-            var texttd5 = document.createTextNode("44");
+            var texttd5 = document.createTextNode("25");
             td5.appendChild(texttd5);
 
             tr1.appendChild(td1);
@@ -196,11 +196,11 @@ class Classi {
             btnStyle.setProperty('color', 'var(--silver)');
             btnStyle.setProperty('height', '40px');
             btnStyle.setProperty('width', '125px');
-            btnStyle.setProperty("background-image", "url('img/csv-icon-12.png')");
+            btnStyle.setProperty("background-image", "url('img/icon-csv.png')");
             btnStyle.setProperty('background-position', '5px center');
             btnStyle.setProperty('background-repeat', 'no-repeat');
             btnStyle.setProperty('background-size', '25px');
-            btnStyle.setProperty('padding-left', '17px');
+            btnStyle.setProperty('padding-left', '10px');
             var btnTitle = document.createTextNode("Scarica-csv");
             btn.appendChild(btnTitle);
             // ./button csv
@@ -217,7 +217,7 @@ class Classi {
             btnStylePdf.setProperty('height', '40px');
             btnStylePdf.setProperty('width', '125px');
             btnStylePdf.setProperty("background-image", "url('img/icon-pdf.png')");
-            btnStylePdf.setProperty('background-position', '5px center');
+            btnStylePdf.setProperty('background-position', '2px center');
             btnStylePdf.setProperty('background-repeat', 'no-repeat');
             btnStylePdf.setProperty('background-size', '35px');
             btnStylePdf.setProperty('padding-left', '17px');
@@ -226,26 +226,26 @@ class Classi {
             btnPdf.appendChild(btnTitlePdf);
             // ./button pdf
 
-             // button excel
-             var btnExcel = document.createElement('button');
-             btnExcel.setAttribute('class', 'btn-scarica-file-excel');
-             var btnStyleExcel = btnExcel.style;
-             btnStyleExcel.setProperty('cursor', 'pointer');
-             btnStyleExcel.setProperty('background-color', 'var(--transparent-blue)');
-             btnStyleExcel.setProperty('border', '1px solid var(--silver)');
-             btnStyleExcel.setProperty('border-radius', '8px');
-             btnStyleExcel.setProperty('color', 'var(--silver)');
-             btnStyleExcel.setProperty('height', '40px');
-             btnStyleExcel.setProperty('width', '125px');
-             btnStyleExcel.setProperty("background-image", "url('img/icon-excel.png')");
-             btnStyleExcel.setProperty('background-position', '3px center');
-             btnStyleExcel.setProperty('background-repeat', 'no-repeat');
-             btnStyleExcel.setProperty('background-size', '25px');
-             btnStyleExcel.setProperty('padding-left', '18px');
-             btnStyleExcel.setProperty('margin-left', '5px');
-             var btnTitleExcel = document.createTextNode("Scarica-excel");
-             btnExcel.appendChild(btnTitleExcel);
-             // ./button excel
+            // button excel
+            var btnExcel = document.createElement('button');
+            btnExcel.setAttribute('class', 'btn-scarica-file-excel');
+            var btnStyleExcel = btnExcel.style;
+            btnStyleExcel.setProperty('cursor', 'pointer');
+            btnStyleExcel.setProperty('background-color', 'var(--transparent-blue)');
+            btnStyleExcel.setProperty('border', '1px solid var(--silver)');
+            btnStyleExcel.setProperty('border-radius', '8px');
+            btnStyleExcel.setProperty('color', 'var(--silver)');
+            btnStyleExcel.setProperty('height', '40px');
+            btnStyleExcel.setProperty('width', '125px');
+            btnStyleExcel.setProperty("background-image", "url('img/icon-excel.png')");
+            btnStyleExcel.setProperty('background-position', '3px center');
+            btnStyleExcel.setProperty('background-repeat', 'no-repeat');
+            btnStyleExcel.setProperty('background-size', '25px');
+            btnStyleExcel.setProperty('padding-left', '18px');
+            btnStyleExcel.setProperty('margin-left', '5px');
+            var btnTitleExcel = document.createTextNode("Scarica-excel");
+            btnExcel.appendChild(btnTitleExcel);
+            // ./button excel
 
             divContent.appendChild(table);
             divContent.appendChild(btn);
@@ -386,9 +386,7 @@ class Classi {
                 doc.rect(5, 26, 200, 0.1); // left, top, width, height
                 // ./add line
 
-                // dati da visualizzare sul pdf
                 var data = cls.data();
-
                 // ./dati da visualizzare sul pdf
 
                 // var position and num records for page
@@ -503,130 +501,127 @@ class Classi {
                 // throw new Error("File creato con successo");
                 doc.save(`${file_name}.pdf`);
                 // .save file
-                
-                // loader
+
+                // hide loader
                 setTimeout((e) => {
                     Funzioni.loaderHide();
                 }, 3000);
-                // ./loader
+                // ./hide loader
             } catch (Exception) {
                 console.error(Exception.message);
             }
         }
         // ./ create pdf
-         // STRTABLE
+        // STRTABLE
     strtable(tableID, nomefile) {
-        var data = cls.data();
-        var td = "";
-        var table = '<table class="table-excel" border="2px">' +
-            '<thead>' +
-            '<caption>dati caricati per creare file</caption>' +
-            '<tr>' +
-            '<th>ID</th>' +
-            '<th>USR</th>' +
-            '<th>PSW</th>' +
-            '<th>EMAIL</th>' +
-            '<th>AGE</th>' +
-            '</tr>' +
-            '</thead>' +
-            '<tbody>';
-        for (var i = 0; i < data.length; i++) {
-            if (i % 2 == 0) {
-                table += '<tr style="background-color: rgb(32, 178, 170); color: white; text-align: center; height: 20px;">';
+            var data = cls.data();
+            var td = "";
+            var table = '<table class="table-excel" border="2px">' +
+                '<thead>' +
+                '<caption>dati caricati per creare file</caption>' +
+                '<tr>' +
+                '<th>ID</th>' +
+                '<th>USR</th>' +
+                '<th>PSW</th>' +
+                '<th>EMAIL</th>' +
+                '<th>AGE</th>' +
+                '</tr>' +
+                '</thead>' +
+                '<tbody>';
+            for (var i = 0; i < data.length; i++) {
+                if (i % 2 == 0) {
+                    table += '<tr style="background-color: rgb(32, 178, 170); color: white; text-align: center; height: 20px;">';
+                } else {
+                    table += '<tr style="background-color: rgb(135, 206, 250); color: white; text-align: center; height: 20px;">';
+                }
+                for (var j = 0; j < data[i].length; j++) {
+                    // if (tipo[i] == "NIL") { continue };
+                    td += '<td>' + data[i][j] + '</td>';
+                } // ./for j
+                table += `${td}</tr>`;
+                td = "";
+            } // ./for i
+
+            table += '</tbody>' +
+                '</table>';
+            document.querySelector('.table-excel').innerHTML = table;
+            this.exportTableToExcel(tableID, nomefile);
+            // fnExcelReport('table_fatture');
+        } // strtable()
+        // STRTABLE
+        // EXPORT TABLE TO EXCEL
+    exportTableToExcel(tableID, filename) {
+            var downloadLink;
+            var dataType = 'application/vnd.ms-excel';
+            var tableSelect = document.querySelector("." + tableID);
+
+
+            var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
+
+            // Specify file name
+            filename = filename ? filename + '.xls' : 'excel_data.xls';
+
+            // Create download link element
+            downloadLink = document.createElement("a");
+
+            document.body.appendChild(downloadLink);
+
+            if (navigator.msSaveOrOpenBlob) {
+                var blob = new Blob(['\ufeff', tableHTML], {
+                    type: dataType
+                });
+                navigator.msSaveOrOpenBlob(blob, filename);
             } else {
-                table += '<tr style="background-color: rgb(135, 206, 250); color: white; text-align: center; height: 20px;">';
+                // Create a link to the file
+                downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
+
+                // Setting the file name
+                downloadLink.download = filename;
+
+                //triggering the function
+                downloadLink.click();
+
+                setTimeout((e) => {
+                    Funzioni.loaderHide();
+                    /*
+                    $(`.table-excel tr th`).css({
+                        'border': '1px solid #dc3545'
+                    });
+                    $(`.table-excel tr td`).css({
+                        'border': '1px solid #fd7e14'
+                    });
+                    */
+                }, 3000);
             }
-            for (var j = 0; j < data[i].length; j++) {
-                // if (tipo[i] == "NIL") { continue };
-                td += '<td>' + data[i][j] + '</td>';
-            } // ./for j
-            table += `${td}</tr>`;
-            td = "";
-        } // ./for i
-
-        table += '</tbody>' +
-            '</table>';
-        document.querySelector('.table-excel').innerHTML = table;
-        this.exportTableToExcel(tableID, nomefile);
-        // fnExcelReport('table_fatture');
-    } // strtable()
-    // STRTABLE
-    // EXPORT TABLE TO EXCEL
-exportTableToExcel(tableID, filename) {
-        var downloadLink;
-        var dataType = 'application/vnd.ms-excel';
-        var tableSelect = document.querySelector("." + tableID);
-
-
-        var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
-
-        // Specify file name
-        filename = filename ? filename + '.xls' : 'excel_data.xls';
-
-        // Create download link element
-        downloadLink = document.createElement("a");
-
-        document.body.appendChild(downloadLink);
-
-        if (navigator.msSaveOrOpenBlob) {
-            var blob = new Blob(['\ufeff', tableHTML], {
-                type: dataType
-            });
-            navigator.msSaveOrOpenBlob(blob, filename);
-        } else {
-            // Create a link to the file
-            downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
-
-            // Setting the file name
-            downloadLink.download = filename;
-
-            //triggering the function
-            downloadLink.click();
-
-            setTimeout((e) => {
-                Funzioni.loaderHide();
-                /*
-                $(`.table-excel tr th`).css({
-                    'border': '1px solid #dc3545'
-                });
-                $(`.table-excel tr td`).css({
-                    'border': '1px solid #fd7e14'
-                });
-                */
-            }, 3000);
         }
-    }
-    // EXPORT TABLE TO EXCEL
-       // create excel
+        // EXPORT TABLE TO EXCEL
+        // create excel
     createExcel(tableID, fileName) {
-        'use strict'
-        try {
-            /*
-            console.group('head');
-            console.log("Excel");
-            console.groupEnd("head");
-            */
-            // throw new Error("Nuovo messaggio di errore");
-            Funzioni.loader();
-            cls.strtable(tableID, fileName);
-        } catch (Exception) {
-            console.error(Exception.message);
+            'use strict'
+            try {
+                /*
+                console.group('head');
+                console.log("Excel");
+                console.groupEnd("head");
+                */
+                // throw new Error("Nuovo messaggio di errore");
+                Funzioni.loader();
+                cls.strtable(tableID, fileName);
+            } catch (Exception) {
+                console.error(Exception.message);
+            }
         }
-    }
-    // ./create excel
-        
+        // ./create excel
 } // ./classi
 
 // call Classi
 const cls = new Classi()
-// cls.messaggioDiConferma("Salvato con successo");
-
+    // cls.messaggioDiConferma("Salvato con successo");
 cls.createTable();
-
 // func create file csv
 var btnScaricaFileCsv = document.querySelector('.btn-scarica-file-csv');
 btnScaricaFileCsv.addEventListener('click', function() {
-    var question = prompt("Nome file", "Nome file CSV");
+    var question = prompt("Nome file ?", "Scrivere qui");
     if (question) {
         cls.htmlToCSV(null, question);
     } else if (question == "") {
@@ -647,11 +642,11 @@ btn_pdf.addEventListener('click', (e) => {
         console.log("Button-Pdf");
     console.groupEnd("begin");
     */
-    var question = prompt("Scegliere un nome da dare al file", "Inserire qui");
+    var question = prompt("Nome file ?", "Scrivere qui");
     if (question) {
         cls.create_pdf(question);
     } else if (question == "") {
-        Funzioni.showMyAlert("non hai scelto il nome file", "var(--warning)", "var(--dark)", "var(--yellow)");
+        Funzioni.showMyAlert("non hai scritto nome file", "var(--warning)", "var(--dark)", "var(--dark)");
     }
 });
 // button create pdf
@@ -659,7 +654,12 @@ btn_pdf.addEventListener('click', (e) => {
 // create excel
 var btnExcel = document.querySelector('.btn-scarica-file-excel');
 btnExcel.addEventListener('click', (e) => {
-    cls.createExcel("table-excel", "Testing");
+    var question = prompt("Nome file ?", "Scrivere qui");
+    if (question) {
+        cls.createExcel("table-excel", "Testing");
+    } else if (question == "") {
+        Funzioni.showMyAlert("non hai scritto nome file", "var(--warning)", "var(--dark)", "var(--dark)");
+    }
 });
 /*
 btnExcel.addEventListener('mousedown', (e) => {
