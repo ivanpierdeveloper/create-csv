@@ -403,16 +403,16 @@ form span {
     top: 50%;
     transform: translate(-50%, -50%);
     /* /ottima sintassi per centrare gli elementi. */
-    width: 80px;
-    height: 80px;
-    z-index: 999;
-    /*background-color: #464646;*/
+    width: 500px;
+    height: 500px;
+    color: red !important;
     background: url('../img/loader/auto-1.gif') no-repeat center top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     display: none;
+    z-index: 1;
     /*
 	animation-name: divpanel;
 	animation-duration: 3s;
