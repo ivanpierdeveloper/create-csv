@@ -656,7 +656,7 @@ var btnExcel = document.querySelector('.btn-scarica-file-excel');
 btnExcel.addEventListener('click', (e) => {
     var question = prompt("Nome file ?", "Scrivere qui");
     if (question) {
-        cls.createExcel("table-excel", "Testing");
+        cls.createExcel("table-excel", question);
     } else if (question == "") {
         Funzioni.showMyAlert("non hai scritto nome file", "var(--warning)", "var(--dark)", "var(--dark)");
     }
