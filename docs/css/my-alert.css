@@ -1,0 +1,113 @@
+/* ######################################################## full-screen ################################################# */
+
+.full-screen {
+    background-color: var(--fullscreen);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    display: none;
+    filter: alpha(opacity=50);
+}
+
+
+/* ######################################################## ./full-screen ################################################# */
+
+
+/* ######################################################## my-alert ################################################# */
+
+.my-alert {
+    width: 45vw;
+    height: auto;
+    position: fixed;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 3px 17px var(--secondary);
+    border-radius: 8px;
+    border: 1px solid;
+    padding: 18px;
+    text-align: center;
+    /*background-color: var(--dark);*/
+    /*color: var(--yellow);*/
+    z-index: 10000;
+}
+
+
+/* ./my-alert */
+
+.img-close {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+
+/* ./img-close */
+
+
+/* ######################################################## ./my-alert ################################################# */
+
+
+/* ############################################################# loader ################################################ */
+
+.loader {
+    border: 0px solid grey;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    padding: 4px;
+    /*box-shadow: 0px 3px 20px; rgba(0, 0, 0, 0.5);*/
+    /*position: fixed; top: 25%; left: 46%;*/
+    /* ottima sintassi per centrare gli elementi. */
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* /ottima sintassi per centrare gli elementi. */
+    width: 100px;
+    height: 100px;
+    color: red !important;
+    background: url('../../img/loader/auto-1.gif') no-repeat center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: none;
+    z-index: 1;
+    /*
+	animation-name: divpanel;
+	animation-duration: 3s;
+*/
+}
+
+.loader-text {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*width: 100%;*/
+    width: 40vw;
+    height: auto;
+    text-align: center;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-z-index: 1;
+    -moz-z-index: 1;
+    padding: 18px;
+    -ms-z-index: 1;
+    -o-z-index: 1;
+    z-index: 9999;
+    display: none;
+}
+
+
+/* ############################################################# ./loader ################################################ */

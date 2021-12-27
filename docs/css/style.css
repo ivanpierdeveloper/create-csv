@@ -1,0 +1,223 @@
+/* button */
+
+.btn {
+    border: 1px solid gray;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    width: 25%;
+    height: 30px;
+    font-family: Arial, Helvetica, monospace, sans-serif;
+    font-variant: small-caps;
+    margin-top: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--white);
+}
+
+
+/* btn-success*/
+
+.btn-s:hover {
+    background-color: var(--success);
+}
+
+.btn-s {
+    transition: 2s;
+    border: 1px solid var(--yellow);
+    background-color: transparent;
+    color: var(--light);
+    background-image: url('../../img/loader/loading-buffering.gif');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 5px center;
+}
+
+
+/* btn-success */
+
+
+/* btn-info */
+
+.btn-i:hover {
+    background-color: var(--info);
+}
+
+.btn-i {
+    transition: 2s;
+    border: 1px solid var(--yellow);
+    background-color: transparent;
+    color: var(--light);
+    background-image: url('../../img/loader/loading-buffering.gif');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 5px center;
+}
+
+
+/* btn-info */
+
+
+/* btn-primary */
+
+.btn-p:hover {
+    background-color: var(--primary);
+}
+
+.btn-p {
+    transition: 2s;
+    border: 1px solid var(--yellow);
+    background-color: transparent;
+    color: var(--light);
+    background-image: url('../../img/loader/loading-buffering.gif');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 5px center;
+}
+
+
+/* btn-primary */
+
+
+/* btn-warning */
+
+.btn-w:hover {
+    background-color: var(--warning);
+}
+
+.btn-w {
+    transition: 2s;
+    border: 1px solid var(--yellow);
+    background-color: transparent;
+    color: var(--light);
+    background-image: url('../../img/loader/loading-buffering.gif');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 5px center;
+}
+
+
+/* btn-warning */
+
+
+/* btn-danger */
+
+.btn-d:hover {
+    background-color: var(--danger);
+}
+
+.btn-d {
+    transition: 2s;
+    border: 1px solid var(--yellow);
+    background-color: transparent;
+    color: var(--light);
+    background-image: url('../../img/loader/loading-buffering.gif');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 5px center;
+}
+
+
+/* btn-dangr */
+
+
+/* btn-customized */
+
+.btn-c:hover {
+    background-color: var(--darkblue);
+}
+
+.btn-c {
+    transition: 2s;
+    border: 1px solid var(--yellow);
+    background-color: transparent;
+    color: var(--light);
+    background-image: url('../../img/loader/loading-buffering.gif');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 5px center;
+}
+
+
+/* btn-customized */
+
+
+/* button */
+
+
+/* body */
+
+body {
+    background-color: var(--secondary);
+    font-family: Arial, Helvetica, monospace, sans-serif;
+    font-variant: small-caps;
+}
+
+
+/* body */
+
+
+/* input type */
+
+input[type=text],
+input[type=password],
+input[type=url],
+input[type=email],
+input[type=number] {
+    display: block;
+    width: 85%;
+    height: 30px;
+    border: 1px solid var(--secondary);
+    border-radius: 8px;
+    background-image: url('../../img/loader/einstein.gif');
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    padding-left: 33px;
+}
+
+input[type='checkbox'] {
+    cursor: pointer;
+}
+
+
+/* input type */
+
+
+/* form span */
+
+form span {
+    display: block;
+    position: fixed;
+    left: 60%;
+    display: none;
+}
+
+
+/* form span */
+
+
+/* imposta<zioni pagina dei contenuti e mymodal */
+
+.container {
+    border: 1px solid var(--orange);
+    /*width: 50vw;*/
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-right: auto;
+    /*  position: fixed; left: 50%; top: 50%;
+    transform: translate(-50%, -50%); */
+    padding: 18px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    background-color: var(--dark);
+    box-shadow: 0 3px 17px var(--orange);
+}
+
+.img-clear {
+    cursor: pointer;
+    float: right;
+    position: relative;
+    bottom: 35px;
+}

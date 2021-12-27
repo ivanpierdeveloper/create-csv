@@ -1,0 +1,293 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #868e96;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #868e96;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --azzurro: #7abfc4;
+    --giallo: #e9bd3d;
+    --verdescuro: #55664f;
+    --verdesalvia: #91a67c;
+    --indianred: #cd5c5c;
+    --white: #ffffff;
+    --fullscreen: rgb(33, 37, 41, 0.5);
+    --gold: rgb(255, 215, 0);
+    --silver: rgb(192, 192, 192);
+    --transparent-blue: rgba(0, 0, 255, 0.1);
+    /* section dark */
+    --darkblue: rgb(0, 0, 139);
+    --darkcyan: rgb(0, 139, 139);
+    --darkgoldenrod: rgb(184, 134, 11);
+    --darkgray: rgb(169, 169, 169);
+    --darkgreen: rgb(0, 100, 0);
+    --darkgrey: rgb(169, 169, 169);
+    --darkkhaki: rgb(189, 183, 107);
+    --darkmagenta: rgb(139, 0, 139);
+    --darkolivegreen: rgb(85, 107, 47);
+    --darkorange: rgb(255, 140, 0);
+    --darkorchid: rgb(153, 50, 204);
+    --darkred: rgb(139, 0, 0);
+    --darksalmon: rgb(233, 150, 122);
+    --darkseagreen: rgb(143, 188, 143);
+    --darkslateblue: rgb(72, 61, 139);
+    --darkslategray: rgb(47, 79, 79);
+    --darkslategrey: rgb(47, 79, 79);
+    --darkturquoise: rgb(0, 206, 209);
+    --darkviolet: rgb(48, 0, 211);
+    /* section dark */
+    /* section light */
+    --lightblue: rgb(173, 216, 230);
+    --lightcoral: rgb(240, 128, 128);
+    --lightcyan: rgb(224, 255, 255);
+    --lightgoldenrodyellow: rgb(250, 250, 210);
+    --lightgray: rgb(211, 211, 211);
+    --lightgreen: rgb(144, 238, 144);
+    --lightgrey: rgb(211, 211, 211);
+    --lightpink: rgb(255, 182, 193);
+    --lightsalmon: rgb(255, 160, 122);
+    --lightseagreen: rgb(32, 178, 170);
+    --lightskyblue: rgb(135, 206, 250);
+    --lightslategray: rgb(119, 136, 153);
+    --lightslategrey: rgb(119, 136, 153);
+    --lightsteelblue: rgb(176, 196, 222);
+    --lightyellow: rgb(255, 255, 224);
+    /* section light */
+}
+
+
+/* COLORI CUSTOM AZIENDA. */
+
+
+/* color background and text */
+
+.root-bg-text-azzurro-white {
+    background-color: var(--azzurro);
+    /* #7abfc4;*/
+    color: var(--white);
+}
+
+.root-bg-text-giallo-white {
+    background-color: var(--giallo);
+    color: var(--white);
+}
+
+.root-bg-text-verdescuro-white {
+    background-color: var(--verdescuro);
+    color: var(--white);
+}
+
+.root-bg-text-verdesalvia-white {
+    background-color: var(--verdesalvia);
+    color: var(--white);
+}
+
+.root-bg-text-indianred-white {
+    background-color: var(--indianred);
+    color: var(--white);
+}
+
+.root-bg-text-danger-white {
+    background-color: var(--danger);
+    color: var(--white);
+}
+
+.root-bg-text-warning-dark {
+    background-color: var(--warning);
+    color: var(--dark);
+}
+
+.root-bg-text-dark-white {
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+.root-bg-text-blue-white {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+
+/* ./color background and text */
+
+
+/* color text */
+
+.root-text-color-azzurro {
+    color: var(--azzurro);
+}
+
+.root-text-color-giallo {
+    color: var(--giallo);
+}
+
+.root-text-color-verdescuro {
+    color: var(--verdescuro);
+}
+
+.root-text-color-verdesalvia {
+    color: var(--verdesalvia);
+}
+
+.root-text-color-indianred {
+    color: var(--indianred);
+}
+
+
+/* /COLORI CUSTOM AZIENDA. */
+
+.root-text-color-blue {
+    color: var(--blue);
+}
+
+.root-text-color-purple {
+    color: var(--purple);
+}
+
+
+/* ./color text */
+
+
+/* text-align */
+
+.root-text-align-left {
+    text-align: left;
+}
+
+.root-text-align-center {
+    text-align: center;
+}
+
+.root-text-align-right {
+    text-align: right;
+}
+
+
+/* ./text-align */
+
+
+/* color background */
+
+.root-bg-color-blue {
+    background-color: var(--blue);
+}
+
+
+/* ./color background */
+
+
+/* text font */
+
+.root-font-bold {
+    font-weight: bold;
+}
+
+.root-font-uppercase {
+    text-transform: uppercase;
+}
+
+.root-font-lowercase {
+    text-transform: lowercase;
+}
+
+.root-font-prima-lettera {
+    text-transform: capitalize;
+}
+
+.root-font-pt-5 {
+    font-size: 5pt;
+}
+
+.root-font-pt-6 {
+    font-size: 6pt;
+}
+
+.root-font-pt-8 {
+    font-size: 8pt;
+}
+
+.root-font-pt-9 {
+    font-size: 9pt;
+}
+
+.root-font-pt-10 {
+    font-size: 10pt;
+}
+
+.root-font-pt-11 {
+    font-size: 11pt;
+}
+
+.root-font-pt-12 {
+    font-size: 12pt;
+}
+
+.root-font-pt-14 {
+    font-size: 14pt;
+}
+
+
+/* ./text font */
+
+
+/* display none e block */
+
+.root-display-none {
+    display: none;
+}
+
+.root-display-block {
+    display: block;
+}
+
+
+/* ./display none e block */
+
+
+/* clear both */
+
+.root-clear-dom {
+    clear: both;
+}
+
+
+/* ./clear both */
+
+
+/* cursor pointer */
+
+.root-cursor-pointer {
+    cursor: pointer;
+}
+
+
+/* ./cursor pointer */
+
+
+/* element float */
+
+.root-el-align-left {
+    float: left;
+}
+
+.root-el-align-right {
+    float: right;
+}
+
+
+/* ./element float */
