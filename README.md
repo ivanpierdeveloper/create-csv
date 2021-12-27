@@ -11,6 +11,7 @@
 -> Dati recuperati in modo statico che si può rendere dinamico esempio dal db phpMyAdmin.
 
 <img src="img/screen-shot.png" alt="Sorry, not image" />
+<img src="img/screen-shot-2.png" alt="Sorry, not image" />
 <a href="https://ivanpierdeveloper.github.io/create-file/" target="_blank">Go To</a>
 
 ## FINE ##
