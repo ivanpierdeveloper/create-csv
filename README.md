@@ -8,7 +8,7 @@
   <li>excel</li>
   <li>zip Nota: (per questa funzione è necessario scarica l'app e provarla in locale. Motivo file PhP).</li>
 </ul>
--> Dati recuperati dal db oppure in modo statico che si può rendere dinamico.
+-> Dati recuperati in modo statico che si può rendere dinamico esempio dal db phpMyAdmin.
 
 <img src="img/screen-shot.png" alt="Sorry, not image" />
 <a href="https://ivanpierdeveloper.github.io/create-file/" target="_blank">Go To</a>
